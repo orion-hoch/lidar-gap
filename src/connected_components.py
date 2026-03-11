@@ -223,20 +223,23 @@ def extract_damage_components(
 ) -> tuple[list, list, int]:
     """Threshold a C2C array and extract connected components.
 
+    Uses ``filterPointsByScalarValue`` (single C++ call) to subset damaged
+    points rather than a Python-loop ``ReferenceCloud`` approach.
+
     Parameters
     ----------
     source_cloud : ccPointCloud
-        The reference cloud whose geometry is used.
+        The reference cloud with the C2C scalar field already attached.
     c2c_array : np.ndarray
-        Float64 C2C distance per point (same ordering as *source_cloud*).
+        Float64 C2C distance per point — used only for the threshold count log.
     sf_name : str
-        Name that was (or will be) used for the scalar field.
+        Name of the C2C scalar field on *source_cloud*.
     grid_id : str
         Grid / tile identifier for log messages.
     epoch_label : str
         ``"damage_1718"`` or ``"recovery_1820"``.
     config : dict, optional
-        Must contain *damage_threshold*, *min_component_pts*.
+        Must contain *damage_threshold*, *min_component_pts*, *max_components*.
 
     Returns
     -------
@@ -248,13 +251,11 @@ def extract_damage_components(
         The octree level that was used.
     """
     threshold = _cfg(config, "damage_threshold")
-    min_pts = _cfg(config, "min_component_pts")
+    min_pts   = _cfg(config, "min_component_pts")
     max_comps = _cfg(config, "max_components")
 
-    mask = c2c_array > threshold
-    indices = np.where(mask)[0].astype(np.int32)
-
-    if indices.size == 0:
+    n_above = int(np.sum(c2c_array > threshold))
+    if n_above == 0:
         print(
             f"[COMP] {grid_id}/{epoch_label}: no points exceed "
             f"{threshold} m threshold — skipping component extraction."
@@ -262,42 +263,44 @@ def extract_damage_components(
         return [], [], 0
 
     print(
-        f"[COMP] {grid_id}/{epoch_label}: {indices.size} / {c2c_array.size} "
-        f"points ({100.0 * indices.size / c2c_array.size:.1f}%) above "
-        f"{threshold} m threshold."
+        f"[COMP] {grid_id}/{epoch_label}: {n_above:,} / {c2c_array.size:,} "
+        f"points ({100.0 * n_above / c2c_array.size:.1f}%) above {threshold} m."
     )
 
-    # --- Create partial clone of thresholded points ---
-    ref = cc.ReferenceCloud(source_cloud)
-    for idx in indices:
-        ref.addPointIndex(int(idx))
-    damaged_cloud, res_code = source_cloud.partialClone(ref)
-    if res_code != 0 or damaged_cloud is None:
+    # --- Subset to damaged points via filterPointsByScalarValue (pure C++) ---
+    # Requires the C2C SF to be the current *displayed* scalar field.
+    sf_dic = source_cloud.getScalarFieldDic()
+    if sf_name not in sf_dic:
         print(
-            f"[COMP] {grid_id}/{epoch_label}: WARNING — partialClone failed "
-            f"(code={res_code}). Returning empty components."
+            f"[COMP] {grid_id}/{epoch_label}: WARNING — SF '{sf_name}' not "
+            f"found on source cloud. Available: {list(sf_dic.keys())}"
         )
         return [], [], 0
 
-    # Attach C2C values as a scalar field on the cloned cloud so that
-    # downstream stats can read them directly from each component.
-    sf_idx = damaged_cloud.addScalarField(sf_name)
-    if sf_idx >= 0:
-        sf = damaged_cloud.getScalarField(sf_idx)
-        masked_vals = c2c_array[mask]
-        np_sf = sf.toNpArrayCopy()
-        # The SF array is the same length as the cloned cloud.
-        np.copyto(np_sf, masked_vals[:np_sf.size])
-        # Write back: iterate to set each value (toNpArrayCopy is a copy).
-        for i in range(int(damaged_cloud.size())):
-            sf.setValue(i, float(masked_vals[i]))
-        damaged_cloud.setCurrentDisplayedScalarField(sf_idx)
+    source_cloud.setCurrentDisplayedScalarField(sf_dic[sf_name])
 
-    # --- Choose octree level ---
+    # filterPointsByScalarValue keeps points where SF is in [minVal, maxVal].
+    # Use a large upper bound so we keep everything above the threshold.
+    max_c2c = float(np.max(c2c_array)) + 1.0
+    damaged_cloud = source_cloud.filterPointsByScalarValue(threshold, max_c2c)
+
+    if damaged_cloud is None or damaged_cloud.size() == 0:
+        print(
+            f"[COMP] {grid_id}/{epoch_label}: WARNING — filterPointsByScalarValue "
+            "returned empty cloud. Returning empty components."
+        )
+        return [], [], 0
+
+    print(
+        f"[COMP] {grid_id}/{epoch_label}: damaged_cloud has "
+        f"{damaged_cloud.size():,} points after filter."
+    )
+
+    # --- Choose octree level dynamically ---
     octree_level = _dynamic_octree_level(damaged_cloud)
     print(
-        f"[COMP] {grid_id}/{epoch_label}: using octree level {octree_level} "
-        f"for component extraction."
+        f"[COMP] {grid_id}/{epoch_label}: octree level = {octree_level} "
+        f"(~{damaged_cloud.getOwnBB().getDiagNorm() / 2**octree_level:.1f} m cell size)."
     )
 
     # --- Extract connected components ---
@@ -310,13 +313,11 @@ def extract_damage_components(
     )
 
     print(
-        f"[COMP] {grid_id}/{epoch_label}: extracted {len(components)} "
-        f"components, {len(residuals)} residual clouds "
-        f"(octreeLevel={octree_level})."
+        f"[COMP] {grid_id}/{epoch_label}: {len(components)} components, "
+        f"{len(residuals)} residual clouds (octreeLevel={octree_level})."
     )
 
-    # The intermediate damaged_cloud is no longer needed — the components
-    # hold their own geometry.  Delete to free memory.
+    # Intermediate damaged_cloud no longer needed — components hold their geometry.
     cc.deleteEntity(damaged_cloud)
 
     return components, residuals, octree_level
