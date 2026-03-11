@@ -1,0 +1,11 @@
+# cloudComPy is NOT pip-installable — it must be built against your CloudCompare installation.
+# See: https://github.com/CloudCompare/CloudComPy
+# On the RealVNC remote machine, follow the build instructions for your OS.
+
+# Supporting libraries
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+
+# Markdown parsing (used in parse_input.py as fallback)
+mistletoe>=1.2

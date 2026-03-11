@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# LiDAR data (large binary files)
+*.las
+*.laz
+*.e57
+*.pts
+
+# Outputs
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode local overrides
+.vscode/launch.json

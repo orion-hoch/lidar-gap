@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.pylint",
+    "ms-toolsai.jupyter",
+    "yzhang.markdown-all-in-one",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "njpwerner.autodocstring"
+  ]
+}
