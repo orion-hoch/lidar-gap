@@ -1,0 +1,1594 @@
+Ecosystems (2022) 25: 892–910
+https://doi.org/10.1007/s10021-021-00688-8
+ 2021 The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature
+
+Tracking the Rates and Mechanisms
+of Canopy Damage and Recovery
+Following Hurricane Maria Using
+Multitemporal Lidar Data
+Veronika Leitold,1 Douglas C. Morton,2* Sebastián Martinuzzi,2,3
+Ian Paynter,2,4 Marı́a Uriarte,5 Michael Keller,6,7 António Ferraz,7,8
+Bruce D. Cook,2 Lawrence A. Corp,2,9 and Grizelle González6
+1
+
+Department of Geographical Sciences, University of Maryland, College Park, 2181 LeFrak Hall, College Park, Maryland 20742, USA;
+2
+Biospheric Sciences Laboratory, NASA Goddard Space Flight Center, 8800 Greenbelt Rd, Code 618, Greenbelt, Maryland 20771,
+USA; 3SILVIS Lab, Department of Forest and Wildlife Ecology, University of Wisconsin-Madison, 1630 Linden Drive, Madison,
+Wisconsin 53706, USA; 4Universities Space Research Association, 7178 Columbia Gateway Dr, Columbia, Maryland 21046, USA;
+5
+Department of Ecology, Evolution and Environmental Biology, Columbia University, 1190 Amsterdam Ave, New York, New York
+10027, USA; 6USDA-Forest Service International Institute of Tropical Forestry, Jardı́n Botánico Sur, 1201 Calle Ceiba, Rı́o Piedras,
+Puerto Rico 00926, USA; 7Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Dr, Pasadena, California
+91109, USA; 8Institute of Environment and Sustainability, University of California, LaKretz Hall, 619 Charles E Young Dr E #300, Los
+Angeles, California 90024, USA; 9Science Systems and Applications Inc, 10210 Greenbelt Rd #600, Lanham, Maryland 20706, USA
+
+ABSTRACT
+ests above 600 m. Yet only 13.5% of the study area
+had canopy heights £ 2 m in 2018, a typical
+threshold for forest gaps, highlighting the importance of damaged trees and advanced regeneration
+on post-storm forest structure. Heterogeneous
+patterns of regrowth and recruitment yielded
+shorter and more open forests by 2020. Nearly 45%
+of forests experienced initial height loss > 1 m
+(2017–2018) followed by rapid height gain > 1 m
+(2018–2020), whereas 21.6% of forests with initial
+height losses showed little or no height gain, and
+17.8% of forests exhibited no height changes larger
+than ± 1 m in either period. Canopy layers < 10 m tall accounted for most increases in
+canopy height and fractional cover between 2018
+and 2020, with gains split evenly between height
+growth and lateral crown expansion by surviving
+individuals. These findings benchmark rates of gap
+formation, crown expansion, and canopy closure
+following hurricane damage and highlight the
+diversity of ecosystem impacts from heterogeneous
+spatial patterns and vertical stratification of forest
+regrowth following a major disturbance event.
+
+Hurricane Maria, a Category 4 storm, snapped and
+uprooted canopy trees, removed large branches,
+and defoliated vegetation across Puerto Rico. The
+magnitude of forest damages and the rates and
+mechanisms of forest recovery following Maria
+provide important benchmarks for understanding
+the ecology of extreme events. We used airborne
+LiDAR data acquired before (2017) and after Maria
+(2018, 2020) to quantify landscape-scale changes
+in forest structure along a 439-ha elevational gradient (100–800 m) in the Luquillo Experimental
+Forest. Damages from Maria were widespread, with
+73% of the study area losing ‡ 1 m in canopy
+height (mean = -7.1 m). Taller forests at lower
+elevations suffered more damage than shorter forReceived 4 March 2021; accepted 18 July 2021;
+published online 9 September 2021
+Author Contributions: DCM and MK conceived the study; VL and
+DCM designed the analysis; BDC and LAC collected airborne LiDAR data;
+VL and DCM analyzed data; all authors contributed to the interpretation
+of results and manuscript preparation.
+*Corresponding author; e-mail: douglas.morton@nasa.gov
+
+892
+
+Forest Canopy Damage and Recovery After Maria
+Key words: forest structure; cyclone; LiDAR;
+succession; ecosystem modeling; canopy traits;
+plasticity; tropical forest.
+
+HIGHLIGHTS
+1. Hurricane Maria gave forests a haircut by toppling trees and shearing branches.
+2. Regrowth after Maria was patchy, with equal
+areas of height gain and no change.
+3. 3-D measures of forest recovery after hurricanes
+can improve ecosystem models.
+
+INTRODUCTION
+Natural disturbances restructure forest ecosystems
+by altering the distributions of tree size, age, and
+species composition. In tropical and subtropical
+forests, cyclones are among the largest and most
+damaging disturbances. Cyclones occur with
+greater frequency than microburst ‘‘blow-down’’
+events (Espı́rito-Santo and others 2014) and cause
+widespread damage to coastal and inland tropical
+forests each year (for example, Chen and others
+2015). Cyclonic storms are projected to increase in
+intensity (Knutson and others 2010; Knutson and
+others 2020) and frequency (Emanuel 2013; Bhatia
+and others 2018; but see Knutson and others 2015)
+as a result of warming ocean temperatures (Hoyos
+and others 2006) and rising atmospheric moisture
+content from climate change (Trenberth and others
+2018). Understanding the patterns and processes of
+forest disturbance and recovery following major
+cyclone events is therefore a priority to improve
+Earth system model predictions of the carbon,
+water, and energy balance of tropical forest regions
+(Seidl and others 2011; U.S. DOE 2018).
+Hurricane Maria was the most powerful storm to
+hit Puerto Rico since 1928, making landfall just two
+weeks after Hurricane Irma on September 20, 2017.
+The Category 4 storm had maximum sustained
+winds of 210 km h-1 (NOAA 2017), and the Luquillo Mountains in northeast Puerto Rico received > 1200 mm of rainfall in just 48 h (Hall
+and others 2020). The combination of strong winds
+and drenching rains damaged infrastructure, causing the largest electricity blackout in US history
+(Román and others 2019), and triggering more
+than 40,000 landslides across the island (BessetteKirton and others 2019). About half of the Luquillo
+Experimental Forest area had at least one landslide
+
+893
+
+per km2 from Hurricane Maria (Van Beusekom and
+others 2018).
+Studies of initial forest damage at the individualtree scale suggest that wind and rain from Hurricane Maria were more damaging to the forests of
+Puerto Rico than previous hurricanes (Tanner and
+others 1991; Everham and Brokaw 1996; Lugo
+2008; Uriarte and others 2019). Hurricane damages
+to individual trees typically range from defoliation
+and branch fall to uprooting or stem breakage, with
+variability among tree species based on structural
+traits such as wood density, tree height, buttressing,
+and crown size (Zimmerman and others 1994;
+Canham and others 2010). At our study site, Hurricane Maria caused more stem breaks, even for
+species with high wood density, than Category 3
+Hurricanes Hugo in 1989 or Georges in 1998 (Uriarte and others 2019). The selective removal of
+taller individuals and canopy tree species with
+lower wood density favors palms and understory
+vegetation (Drew and others 2009; Uriarte and
+others 2019), leading to forests with lower canopies
+and higher stem densities (Ibanez and others
+2018). Delayed mortality of individuals damaged
+by Hurricane Maria, a process documented in past
+storms (Walker 1995), could accentuate a longterm shift to fast-growing pioneer species and species most resilient to high winds, such as palms
+(Drew and others 2009). Combined, Hurricanes
+Irma and Maria also caused a pulse of litter deposition that equaled or exceeded total annual litterfall, with a doubling of woody material (Liu and
+others 2018).
+Initial assessments of island-wide damages from
+Hurricane Maria using Landsat and Sentinel-2
+satellite imagery data confirmed widespread defoliation (Van Beusekom and others 2018; Feng and
+others 2020; Hall and others 2020). Patterns of
+defoliation manifested as a sharp decline in vegetation greenness, especially in the Luquillo Experimental Forest (Van Beusekom and others 2018;
+Feng and others 2020), and an increase in the subpixel fraction of non-photosynthetic vegetation,
+particularly in taller forests and areas that experienced high rainfall before and during Hurricane
+Maria (Hall and others 2020). These studies also
+captured the heterogeneity of forest damages across
+Puerto Rico, consistent with the interactions between hurricane wind, rainfall, and local factors
+such as forest structure and topography (Tanner
+and others 1991). However, passive optical satellite
+data are primarily sensitive to changes in fractional
+vegetation cover (Hu and Smith 2018), and therefore do not differentiate defoliation from structural
+damages, or provide definitive evidence regarding
+
+894
+
+V. Leitold and others
+
+the mechanisms of canopy recovery following
+hurricane disturbance (for example, Feng and
+others 2020).
+Structural changes in the forest canopy from
+hurricane winds promote forest regeneration
+through recruitment, regrowth, or release (Everham and Brokaw 1996; Uriarte and others 2004;
+Uriarte and others 2005; Drew and others 2009;
+Shiels and others 2015). Pioneer woody species can
+recruit from the seed bank immediately after the
+formation of a canopy opening, overtake existing
+non-pioneer trees based on rapid height growth,
+and dominate the adult community for many years
+following disturbances (Shiels and others 2010).
+Smaller gaps in tropical forests typically lead to a
+combination of canopy infilling and promotion
+from below via recruitment and sprouting, although the lateral growth of neighboring trees in
+tropical forests may be more limited (Hunter and
+others 2015) than in temperate ecosystems (Runkle
+and Yetter 1987; Young and Hubbell 1991). In
+larger gaps, including in simulated hurricane
+experiments, defoliated or damaged stems often
+remain standing, limiting light penetration to the
+forest floor and potentially altering recovery pathways compared to non-hurricane gaps (Dietze and
+Clark 2008). Damaged individuals can respond
+quickly after disturbance and flush new leaves or
+resprout within 7–10 weeks to rebuild the tree canopy, a process sometimes referred to as direct
+regeneration (Yih and others 1991; Zimmerman
+and others 1994; Tanner and others 2014). Disturbance can also release surviving individuals in
+the canopy or understory from light, nutrient, or
+water competition, leading to rapid height growth
+(Uriarte and others 2004; Shiels and others 2010).
+Whether forests recover via recruitment, regrowth,
+or release has distinct impacts on forest structure
+and function following hurricane damages.
+Small-footprint airborne LiDAR data provide
+three-dimensional (3-D) information on forest
+structure needed to understand the mechanisms
+that contribute to the structural reorganization of
+forests from hurricane damage and recovery. Previous studies demonstrate the ability to quantify
+fine-scale changes in canopy structure using repeat
+LiDAR surveys of the same area (for example,
+Marvin and Asner 2016; Leitold and others 2018).
+Pre- and post-hurricane LiDAR data provide a unique canopy perspective to investigate landscapescale patterns of damage from an extreme event.
+For example, the spatial and vertical distributions
+of residual canopy tree cover following a hurricane
+influence light availability and growing conditions
+for release and recruitment in the forest understory
+
+(Comita and others 2009). Repeat measurements
+with high-density airborne LiDAR data in the posthurricane period capture height growth, crown
+expansion, and delayed treefall.
+We analyzed a time series of airborne LiDAR data
+to quantify changes in forest structure from damages and recovery from Hurricane Maria in the
+Luquillo Experimental Forest. Based on the elevational gradient (100–800 m) in pre-storm forest
+structure and species composition (Gould and
+others 2006; Weaver 2010) and post-storm research at the plot scale (Uriarte and others 2019),
+we hypothesized that forest damage from Hurricane Maria would vary by forest type, with less
+damage in palm-dominated forests at higher elevations. However, the 3-D forest recovery following hurricane damages is poorly understood, based
+in part on competing processes of vegetation
+recovery and delayed mortality. Our two specific
+aims were therefore to (1) quantify landscape-scale
+variability in structural damage from Hurricane
+Maria, and (2) track the rates and mechanisms of
+changes in canopy structure during the first
+2.5 years following the storm. Airborne data from
+NASA Goddard’s LiDAR, Hyperspectral, and Thermal (G-LiHT) Airborne Imager were acquired over
+439 ha, providing estimates of height changes
+across broad gradients of initial forest structure and
+composition. Understanding changes in forest
+structure from hurricane disturbance and forest
+recovery is necessary to capture the long-term effects of hurricanes on tropical forest ecosystems and
+improve Earth system models.
+
+METHODS
+Study Area
+The study area covers an elevational gradient on
+the northwest-facing slopes of the Luquillo Experimental Forest (coterminous with El Yunque National Forest) in northeastern Puerto Rico
+(Figure 1). The climate is tropical maritime, with
+average annual rainfall of 3860 mm and average
+temperature of 22 C in winter and 30 C in summer (Quiñones and others 2018). Elevation is the
+primary control on temperature and rainfall distributions, with differences of about 5 C in mean
+annual temperature and > 3000 mm in mean
+annual precipitation from the coast to the top of the
+Luquillo Mountains (González and others 2013).
+The subtropical wet and rain forest formations
+within the study area are distributed by elevation
+in four main vegetation zones: (1) secondary wet
+forests in the lowlands; (2) tabonuco montane wet
+
+Forest Canopy Damage and Recovery After Maria
+
+895
+
+Figure 1. Digital terrain model (DTM) of the 439-ha study area showing the 100–800 m elevational gradient and the three
+16-ha focus areas at low (LO), mid (MD), and high (HI) elevations. The inset panel (top right) shows the location of the
+study area (in magenta) within the Luquillo Experimental Forest (LEF) in northeastern Puerto Rico and the path of
+Hurricane Maria (in yellow) across the island (NOAA 2017).
+
+forests between 150–600 m dominated by tabonuco (Dacryodes excelsa) and motillo (Sloanea berteriana) trees with tall canopies reaching 30 m; (3)
+sierra palm (Prestoea montana) forests above 450 m
+that are common on steeper slopes and saturated
+soils; and (4) palo colorado (Cyrilla racemiflora)
+cloud forest between 600 and 900 m with tree
+heights reaching 15 m (Gould and others 2006;
+Quiñones and others 2018); our study area did not
+cover the elfin woodland vegetation type that is
+found on the tallest peaks above 900 m elevation.
+Hurricane Maria made landfall in Puerto Rico on 20
+September 2017 as a Category 4 hurricane (Figure 1), damaging forests across the whole island,
+including the Luquillo Experimental Forest (Hall
+and others 2020).
+
+Airborne LiDAR Data
+Airborne LiDAR data over the Luquillo Experimental Forest were collected using the G-LiHT
+Airborne Imager (Cook and others 2013) in three
+separate campaigns. Data were acquired in March
+2017 (pre-hurricane), April 2018 (7 months posthurricane), and March 2020 (2.5 years post-hurricane), with time intervals between LiDAR data
+collections of 13 months (2017–2018) and
+
+23 months (2018–2020). All three airborne surveys
+used the same G-LiHT v2 instrumentation,
+including two VQ-480i scanning LiDARs (Riegl
+Laser Measurement Systems, Horn Austria). Data
+were acquired from a nominal flying altitude of
+335 m AGL and 130 knots, which produced
+approximately 10 cm laser footprints (1550 nm)
+and an average sampling density of 12 laser pulses
+m-2. Pre- and post-flight boresight alignment of the
+LiDAR sensors ensured vertical accuracies of <
+10 cm (1 sigma) for all three campaigns. G-LiHT
+terrain and canopy height products are openly
+available online from the G-LiHT data portal (http
+s://gliht.gsfc.nasa.gov).
+The total area covered by all three LiDAR surveys
+was 439 ha, and subsets of the study area were
+designated using two different approaches (Figure 1). First, the study area was subdivided into
+100-m terrain elevation classes to compare prehurricane forest structure, hurricane damages, and
+post-hurricane recovery along the gradient from
+100 to 800 m elevation. All G-LiHT DTM elevations
+were referenced to the EGM96 vertical datum.
+Second, we selected three focus areas at low (LO),
+mid (MD), and high (HI) elevations for analyses of
+changes in forest canopy structure over time, based
+
+896
+
+V. Leitold and others
+
+on a consistent sample size. The mid-elevation
+( 380 m) focus area corresponds to the 16-ha
+Luquillo Forest Dynamics Plot (LFDP), part of the
+Long-Term Ecological Research Program (LTER).
+This 16-ha rectangular area (500 m 9 320 m) was
+replicated for the LO ( 170 m elevation) and HI
+( 700 m elevation) focus areas, with the location
+of the LO and HI sites selected at random within
+the LiDAR coverage areas with the lowest and
+highest elevations. The dominant vegetation type
+in the LO and MD focus areas is tabonuco forest,
+while the HI focus area contains sierra palm and
+palo colorado forests.
+
+Analysis
+LiDAR point clouds from the three airborne surveys (2017, 2018, and 2020) were processed using
+a consistent methodology (Cook and others 2013)
+to evaluate changes in canopy height and canopy
+closure during the study period. Digital terrain
+models (DTM) and canopy height models (CHM)
+were generated separately for 2017, 2018 and 2020
+at 1-m spatial resolution. The decision to process
+LiDAR data from each campaign separately, rather
+than using a single reference DTM derived from all
+three campaigns, was based on the high LiDAR
+point density (Leitold and others 2015) and the
+potential influence of landslides and erosion from
+the hurricane on the underlying topography (Van
+Beusekom and others 2018; Bessette-Kirton and
+others 2019). Changes in canopy height were calculated as the simple difference between CHM
+layers in 2017–2018, 2018–2020 and 2017–2020 at
+1-m resolution. Canopy cover was estimated at
+each 1-m vertical increment above the ground as
+the percent ground area covered by vegetation at
+that height; cumulative canopy cover profiles were
+derived from these estimates at the scale of the 16ha focus areas (LO, MD, HI) and the full study area.
+Similarly, canopy gap fraction was calculated at the
+native 1-m resolution of the LiDAR CHM layers as a
+measure of canopy openness––the percent ground
+area not covered by vegetation––at each 1-m vertical height bin in the canopy within the 16-ha
+focus areas and the full study area.
+Forest canopy change was analyzed on a pixelby-pixel basis and classified as one of three change
+categories: (a) loss pixels had canopy height
+change < -1 m between surveys, (b) gain pixels
+had canopy height change > 1 m, and (c) zero
+pixels had canopy height change between -1 m
+and + 1 m, that is, a conservative estimate of nearzero changes in canopy height. Canopy height
+changes associated with hurricane damage (2017–
+
+2018) and post-hurricane recovery (2018–2020)
+created nine potential trajectories: loss–loss, loss–
+zero, loss–gain, zero–loss, zero–zero, zero–gain,
+gain–loss, gain–zero, and gain–gain. The magnitudes of forest canopy changes in each trajectory
+are reported on a per-area basis within the whole
+study area, in 100-m elevation bands (100–800 m),
+and in three 16-ha focus areas (LO, MD, HI). In
+each time interval, 1-m2 loss pixels were summed
+to estimate the fraction of forest area with canopy
+height losses. Previous studies have clustered loss
+pixels into individual canopy turnover events
+(Leitold and others 2018). Annualized rates of canopy turnover within our study area are therefore
+also reported using these more conservative
+thresholds for height loss (> 3 m) and minimum
+size (> 4 m2) for clusters of canopy turnover
+(Leitold and others 2018). Change pixels were
+grouped into vertical canopy height bins (1-m
+increments) and cohorts (5-m increments) to
+examine height changes and cumulative canopy
+cover within the forest profile during the study
+period. The relationship between pre-hurricane
+initial canopy height and post-hurricane height
+change was examined using ordinary least-square
+linear regression.
+Patterns of vertical versus lateral (horizontal)
+growth in the canopy between 2018 and 2020 were
+analyzed using a threshold for maximum vertical
+height gain during this interval derived from two
+approaches. First, height gains within surviving
+canopy tree crowns were assessed in the three focus areas (LO, MD, HI). Crown objects in the 2018
+and 2020 canopy height models for trees at or
+exceeding the pre-storm mean canopy height were
+identified using the ForestTools package (Plowright
+2020) of the R statistical software (R Core Team
+2020). These canopy tree objects (containing one or
+more tree crowns) were used as inputs for the
+watershed segmentation algorithm to delineate the
+horizontal extent of all canopy tree crowns, not to
+separate individuals within the canopy stratum.
+Overlapping 2018 and 2020 canopy tree objects
+were used to estimate height gains within and
+adjacent to the 2018 crown extents (Figure 2).
+Gains within the 2018 extent of crown objects were
+attributed to vertical growth, while height gains
+around crown edges were attributed to lateral
+expansion. Across the three focus areas, 85.1%–
+89.3% of height gains within the extent of 2018
+crown objects were £ 4 m (Figure 3). Second,
+published values of the maximum height growth of
+pioneer tree species were consulted for comparison.
+Vertical growth of up to 4 m was considered possible between 2018 and 2020, based on the maxi-
+
+Forest Canopy Damage and Recovery After Maria
+
+897
+
+Figure 2. Height gains within and between surviving canopy tree crowns were used to attribute changes to vertical or
+lateral crown expansion. An example subset of the MD focus area shows the horizontal extent of surviving canopy tree
+crown objects (‡ 19.7 m, the pre-hurricane mean canopy height in MD) identified in the (A) 2018 and (B) 2020 canopy
+height models; (C) the union of these two sets of polygons was used to separate 2018–2020 height gain (D) within the
+extent of 2018 tree crown objects (i.e. vertical growth) and (E) outside the extent of 2018 but within the extent of 2020 tree
+crown objects (i.e. lateral growth).
+
+Figure 3. In each 16-ha focus area (LO, MD, HI), 2018 and 2020 canopy tree crown objects (see Figure 2) were used to
+quantify the distributions of post-hurricane height gains (2018–2020) within crown objects (‘‘crown center’’, light red),
+adjacent to crown objects (‘‘crown edge’’, dark red), or associated with shorter vegetation (‘‘non-crown’’, gray). Height
+growth attributed to vertical gains within the horizontal extent of existing crown objects in 2018 (‘‘crown centers’’) was
+primarily £ 4 m during this interval in all three focus areas (85.1%, 88.3%, and 89.3% for LO, MD, HI, respectively).
+
+898
+
+V. Leitold and others
+
+mum elongation of Cecropia, a dominant pioneer
+species in the understory (height growth up to
+2.16 m y-1 following disturbance, see Silander
+1979; also, Brokaw 1998). Based on consistent
+estimates of vertical height growth for canopy trees
+and pioneer trees in the forest understory, a height
+gain threshold of 4 m was used to differentiate
+canopy closure via vertical growth (height gain £
+4 m) versus horizontal infilling by adjacent trees
+(height gain > 4 m), and to report the percentages
+of the total area of canopy height gain attributed to
+each process.
+
+RESULTS
+Pre-Hurricane Forest Structure
+In March 2017, closed-canopy tropical forests
+covered the entire study area (Figure 4, Figure S1).
+The distribution of canopy heights was unimodal,
+with mean (± SD) canopy height of 18.2 ± 6.1 m
+(Table 1, Figure 5). Forests were tallest at lower
+elevations between 100 and 500 m, with mean top
+of canopy heights near 20 m. Forests above 600 m
+elevation had shorter trees with mean canopy
+heights of 13.8 ± 3.8 m at 600–700 m and
+10.9 ± 3.4 m at 700–800 m. At all elevations, canopy cover was approximately 99% at 2 m and
+98% at 5 m heights above the ground. For taller
+forests between 100 and 500 m, canopy cover was
+approximately 91% at 10 m above the ground.
+
+Hurricane Damage (2017–2018)
+Forests were substantially shorter and more open
+seven months after Hurricane Maria (Table 1).
+Mean canopy height decreased by 7.1 m (39%)
+across the study region, with average losses ranging
+from 5.8 to 9.6 m between 100 and 600 m elevation and 2.4–3.2 m above 600 m elevation. Mean
+height losses were strongly correlated with prestorm mean canopy height (R2 = 0.80, p = 0.0063),
+as taller forests suffered larger height losses from
+Hurricane Maria. Declines in mean canopy height
+were largest at lower elevations (Table 1), such that
+the tallest forests following the storm were at
+intermediate elevations (Figure 4). The distribution
+of canopy heights at low and middle elevations was
+bimodal in 2018, with one prominent mode corresponding to understory vegetation and advanced
+regeneration (1–2 m) and a second at the mean
+canopy height of 11.1 ± 7.6 m (Figure 5).
+Overall, approximately 73% of the study area
+lost at least 1 m of canopy height between the 2017
+and 2018 LiDAR acquisitions (Table 2). Forests in
+the LO focus area had more damage, (80% ‡ 1 m
+canopy height loss), whereas only 54% of forests in
+the HI focus area had ‡ 1 m height loss from the
+storm (Figure S2). Based on a more conservative
+approach to cluster height losses into canopy
+turnover events using height-loss (> 3 m) and size
+(> 4 m2) thresholds from previous studies, canopy
+turnover from Hurricane Maria was 53.5% y-1, 30
+
+Figure 4. Canopy height models (CHM) at 1-m resolution of the study area in 2017, 2018, 2020 (top row), and canopy
+height change layers between 2017–2018 and 2018–2020 (bottom row). See supplemental Figure S1 for the canopy height
+and change layers for each 16-ha focus area (dashed rectangles).
+
+Forest Canopy Damage and Recovery After Maria
+
+899
+
+Table 1. Canopy Height and Canopy Height Changes Between 2017 and 2020 for the Full Study Area, the
+16-ha Focus Areas (LO, MD, HI), and Each 100-m Elevation Band
+CHM 2017
+
+Full Area
+LO
+MD
+HI
+100–200 m
+200–300 m
+300–400 m
+400–500 m
+500–600 m
+600–700 m
+700–800 m
+
+CHM 2018
+
+D CHM 2017–2018 D CHM 2018–2020
+
+CHM 2020
+
+Mean (m) SD (m) Mean (m) SD (m) Mean (m) SD (m) Mean (m)
+
+%
+
+Mean (m)
+
+%
+
+18.2
+18.9
+19.7
+11.8
+20.3
+20
+19.7
+19.8
+17.9
+13.8
+10.9
+
+-39.0
+-47.1
+-33.0
+-21.2
+-47.3
+-45.5
+-31.5
+-32.8
+-32.4
+-23.2
+-22.0
+
+2.2
+3.1
+2.6
+1.1
+2.8
+2.1
+2.3
+2.4
+1.8
+1.1
+0.9
+
+19.8
+31.0
+19.7
+11.8
+26.2
+19.3
+17.0
+18.0
+14.9
+10.4
+10.6
+
+6.1
+5.8
+4.1
+3.7
+6.7
+5.9
+4.5
+4.3
+4.5
+3.8
+3.4
+
+11.1
+10
+13.2
+9.3
+10.7
+10.9
+13.5
+13.3
+12.1
+10.6
+8.5
+
+7.6
+7.5
+7.6
+4.3
+8.5
+8.3
+7.7
+7.6
+6.8
+4.9
+4
+
+13.3
+13.1
+15.8
+10.4
+13.5
+13
+15.8
+15.7
+13.9
+11.7
+9.4
+
+6.8
+6.8
+6
+3.8
+7.8
+7.5
+6.5
+6.2
+5.8
+4.3
+3.6
+
+-7.1
+-8.9
+-6.5
+-2.5
+-9.6
+-9.1
+-6.2
+-6.5
+-5.8
+-3.2
+-2.4
+
+Mean and standard deviation (sd) canopy heights and canopy height changes were derived from the 2017, 2018, and 2020 Canopy Height Models (CHM) at 1-m spatial
+resolution. Focus area locations are shown in Figure 1.
+
+Figure 5. Vertical profiles of top of canopy height (‘‘chm’’, top row) and cumulative canopy cover (‘‘%cover’’, bottom
+row) in 2017 (green), 2018 (magenta), and 2020 (blue) across the full study area (FULL) and in 16-ha focus areas at low
+(LO), mid (MD) and high (HI) elevation.
+
+times higher than background canopy turnover in
+Amazon forests (1.8% y-1, Leitold and others
+2018).
+Height losses between 2017 and 2018 were
+concentrated in the dominant canopy layer around
+20 m height, proportional to the distribution of
+
+pre-storm canopy heights (Figure 5). Branch loss
+and snapped or uprooted canopy trees therefore
+altered the vertical profile of canopy material,
+revealing layers of understory vegetation at lower
+canopy heights. The forest canopy in 2018 was
+significantly more open than before Maria, with
+
+28.73%
+5.23%
+0.36%
+22.21%
+34.12%
+2.55%
+Loss
+Zero
+Gain
+46.41%
+2.86%
+0.27%
+Loss
+Zero
+Gain
+
+4.90%
+2.65%
+0.60%
+
+22.09%
+18.81%
+1.52%
+
+Post-Storm Recovery (2018–2020)
+
+Gains and losses were separated from zero (no-change) areas based on height changes larger than ± 1 m.
+
+55.84%
+2.79%
+0.60%
+19.81%
+9.95%
+2.09%
+44.62%
+3.25%
+0.43%
+
+Loss
+Zero
+Gain
+
+6.00%
+2.08%
+0.83%
+21.59%
+17.82%
+2.06%
+6.37%
+2.86%
+0.95%
+Loss
+Zero
+Gain
+2017–2018
+
+Gain
+Full area
+
+13.5% of top of canopy heights £ 2 m above the
+ground, a typical height threshold for gaps in field
+studies (Brokaw, 1982), 25.7% £ 5 m, and
+38.1% £ 10 m across the entire study area. Forests at lower elevations (100–600 m) were significantly more open than forests above 600 m
+elevation, with approximately 15% canopy openings £ 2 m above the ground in lower elevation
+forests and 5% canopy openings £ 2 m at higher
+elevation (Figure 5). Forests at lower elevations
+also had lower canopy cover throughout the vertical profile following the storm (for example, 72%
+at 5 m, and 53% at 10 m).
+
+2.89%
+3.15%
+0.76%
+
+Zero
+Loss
+HI
+Gain
+Zero
+Loss
+Loss
+Zero
+Loss
+
+LO
+
+2018–2020
+2018–2020
+
+Zero
+
+Gain
+
+MD
+
+2018–2020
+
+2018–2020
+
+Gain
+
+V. Leitold and others
+Table 2. Canopy Change Trajectories for the Full Study Area and the Three 16-ha Focus Areas (LO, MD, HI) Expressed as the Percentage of Each
+Area in Nine Different Change Categories: Loss–Loss, Loss–Zero, Loss–Gain, Zero–Loss, Zero–Zero, Zero–Gain, Gain–Loss, Gain–Zero, And Gain–
+Gain
+
+900
+
+By March 2020, mean (± SD) canopy height had
+increased from 11.1 ± 7.6 m in 2018 to
+13.3 ± 6.8 m across the study area (Table 1).
+Average vertical height gains were greater at lower
+elevations (2–3 m) than above 600 m ( 1 m), yet
+the tallest forests, on average, remained at intermediate elevations (Figure 4). Canopy closure increased rapidly between 2018 and 2020 at 2 m
+above the ground (97.5%), but open conditions
+persisted at 5 m (89%) and 10 m (65%) canopy
+heights (Figure 5). Approximately 50% of the
+landscape gained at least 1 m in canopy height
+during this 2.5-year interval (Table 2, Figure S2).
+Between the 2018 and 2020 LiDAR acquisitions,
+approximately 10% of the study area lost > 1 m
+height (5% y-1). Clusters of canopy turnover based
+on the more conservative 3-m height loss and 4-m2
+minimum size thresholds was 2.3% y-1, more
+consistent with background turnover rates in other
+tropical forests (Leitold and others 2018). Over
+40% of the landscape had no detectable height
+change larger than ± 1 m in the 2.5 years following the hurricane (Figure 6, Table 2), with canopy
+heights in these no-change areas concentrated
+around the pre-hurricane dominant tree height
+(mean heights of 16.8 m for the full study area,
+18.8 m for LO, 20.7 m for MD, and 11.7 m for HI).
+Over the full study period (2017–2020), there was a
+net loss of canopy material at all canopy heights
+(Figure S2).
+
+Change Trajectories
+Three change trajectories of canopy damage and
+recovery were dominant at all elevations (Figure 6,
+Table 2). Nearly 45% of the study area followed the
+loss–gain trajectory, consistent with large height
+losses from the storm and rapid height gains between 2018 and 2020. The proportion of the loss–
+gain trajectory decreased with elevation from 56%
+
+Forest Canopy Damage and Recovery After Maria
+
+901
+
+Figure 6. Map of the full study area showing the three dominant canopy change trajectories: loss–gain (44.6%), loss–zero
+(21.6%), and zero–zero (17.8%) at 1-m pixel resolution. All other change trajectories are shown in white (16%, see
+Table 2). The yellow rectangles indicate the locations of the three focus areas at low elevation (LO, top left), mid elevation
+(MD, center, and enlarged inset panel), and high elevation (HI, bottom right).
+
+(LO) to 29% (HI). The second most important trajectory was the loss–zero pathway (22%), suggesting delayed canopy recovery in areas of severe
+storm damage. The proportion of forest areas with
+loss–zero trajectories was similar across the elevation gradient in the full study area. The third most
+dominant trajectory was the zero–zero pathway
+(18%), forest canopy trees that neither lost height
+from the storm nor gained height from release in
+the post-storm environment. This trajectory was
+most common at high elevation (34%), where
+shorter trees, greater dominance of palms (Uriarte
+and others 2019), and more regular exposure to
+strong winds may have resulted in both less storm
+damage and slower rates of post-storm height
+growth. Overall, the loss–gain and loss–zero trajectories were widely distributed across the study
+area, whereas the zero–zero trajectory exhibited
+clearer patterns at the individual tree crown and
+landscape scales (Figure 6).
+The vertical distribution of canopy height changes provided important insight into the mechanisms of forest damage and recovery from
+Hurricane Maria (Figure 7). Across the entire study
+area, both height losses and zero (no-change) areas
+
+from 2017 to 2018 were proportional to the prestorm distribution of canopy heights. In the loss
+areas, canopy material was concentrated below
+5 m in height or distributed more uniformly between 5 and 30 m than in the pre-storm structure.
+Gains in canopy height between 2018 and 2020
+created closed-canopy conditions at or below 5 m
+height and reestablished a dominant mode of canopy height at 12 m by 2020. Areas of no-change
+and loss between 2018 and 2020 occurred at all
+height levels, suggesting a highly heterogeneous
+canopy response.
+The vertical redistribution of canopy material
+was similar in the LO and MD focus areas (Figure 7), and broadly consistent with the patterns
+observed across the entire study area. No-change
+areas between 2017 and 2018 in the LO and MD
+focus areas tended to be in taller canopy positions,
+on average. These taller canopy areas also suffered
+greater damages, with a bi-modal distribution of
+canopy heights in the loss category and the most
+open environments below 5 m. Shorter canopy
+environments closed rapidly between 2018 and
+2020, with little or no replacement of gap areas
+
+902
+
+V. Leitold and others
+
+Figure 7. Canopy height distributions colored by change class, where paired figures in each time period illustrate the
+‘‘from-to’’ movement of canopy material. Horizontal stacked bars in each 1-m height bin are colored according to the
+proportion of the study area associated with height loss (purple), height gain (green), and zero change (gray) categories for
+each time interval, 2017–2018 (left column), 2018–2020 (middle column), and 2017–2020 (right column).
+
+Forest Canopy Damage and Recovery After Maria
+
+903
+
+Figure 8. Canopy infilling between 2018 and 2020 was vertically stratified, with more overtopping (> 4 m) than vertical
+height growth (< 4 m) lower in the canopy profile. Box plots summarize canopy height gains between 2018 and 2020 for
+5-m cohorts in forest areas with loss–gain trajectories in the full study area (FULL) and three 16-ha focus areas (LO, MD,
+HI). The vertical dotted red lines indicate the threshold (4 m) separating vertical growth from horizontal infilling by
+neighboring trees, and box widths denote the proportion of all height gains in each 5-m cohort.
+
+with canopy height £ 2 m through further loss
+events.
+Less damage at the HI focus area resulted in a
+more uniform vertical redistribution of canopy
+material. Canopy losses between 2017 and 2018
+were proportional to the pre-storm canopy height
+distribution, but lower overall damages (Table 1,
+Figure S1) resulted in fewer canopy openings near
+the ground in 2018. Unlike the other focus areas,
+the most rapid growth response was near the mean
+canopy height. These factors limited overall changes in the vertical distribution of canopy material
+between 2017 and 2020 compared to portions of
+the study area at lower elevations.
+Vertical height growth from established or new
+individuals and lateral growth of existing tree
+
+crowns contributed equally to canopy height gains
+between 2018 and 2020 for forest areas with loss–
+gain trajectories during the study period (Figures 7,
+8). Most height gains occurred in canopy positions < 10 m in 2018. The shortest cohort (0–5 m)
+was more likely to be overtopped by neighboring
+trees (66%) than retain a canopy position through
+rapid height growth of new or established individuals (34%). For taller forests at LO and MD elevations, the canopy cohort from 5 to 10 m exhibited
+roughly equal proportions of height growth and
+infilling. For canopy positions > 10 m in 2018,
+73–88% of height gains were small, indicative of
+regrowth or expansion within existing crowns
+( £ 2 m y-1), with limited expansion of tree
+
+904
+
+V. Leitold and others
+
+crowns by surviving individuals in the pre-storm
+canopy cohorts.
+
+DISCUSSION
+Small footprint airborne LiDAR data captured
+widespread changes in forest structure from Hurricane Maria and rapid forest recovery along an
+elevational gradient of subtropical wet forest in
+Puerto Rico. Almost three-quarters of the study
+area lost canopy height from crown damage or
+treefall events. Yet, the pattern of hurricane damages was heterogeneous. Losses occurred at all canopy heights, and approximately one quarter of
+forests suffered little or no damage, including many
+taller and more exposed canopy positions. These
+findings reinforce the need to consider speciesspecific attributes (for example, Uriarte and others
+2019) and topographic effects (Van Beusekom and
+others 2018; Muscarella and others 2020) to better
+understand the selective pressure of hurricanes on
+forest structure and composition. Nearly 2.5 years
+after the storm, forests were markedly shorter and
+more open, despite rapid vegetation growth in the
+forest understory. Surprisingly, more than 40% of
+forest canopy positions exhibited little or no height
+growth after the storm. Together, these no-change
+trajectories (loss–zero, zero–zero, gain–zero) were
+as abundant as forest areas with large height losses
+and subsequent height gains. Future work to
+combine LiDAR and inventory data may help reveal whether individuals with little or no height
+growth experienced lower productivity due to canopy damage, abiotic factors such as heat stress, or
+a shift in carbon allocation from height growth to
+other demands, such as fine root production (Silver
+and Vogt 1993; Vargas and others 2009; Van Beusekom and others 2020). Overall, these data provide important benchmarks of changes in forest
+structure from an extreme event, including critical
+inputs for ecosystem models regarding gap formation, initial and delayed structure changes, and the
+importance of surviving trees (with or without
+storm damage) on forest composition and productivity.
+
+Hurricane Damage
+Landscape-scale patterns of forest damage from
+repeat LiDAR data expand upon the understanding
+of hurricane damages from plot-scale studies. Brokaw and Grear (1991) estimated hurricane damage
+in 1-ha plots at three elevations in the Luquillo
+Mountains after Hurricane Hugo, documenting
+similar decreases in top of canopy height and
+
+variability in hurricane damages by forest type
+(21.1–9.3 m in tabonuco and 10.1–7.7 m in palo
+colorado forests). LiDAR data in this study covered
+a much larger area (439 ha), capturing the spatial
+distributions of large and small height losses and
+the extent of forest patches with little or no damage
+from the hurricane (Figure 4), including welldrained sites at higher elevations. These findings
+clarify our understanding of fine-scale variability in
+hurricane damages across the landscape (Weaver
+2010) and motivate additional work on the complex interactions among rainfall, wind, and forest
+structure that create a mosaic of disturbance impacts from hurricanes.
+Patterns of damage in this study differ from those
+in studies of initial forest damages from Hurricane
+Maria using moderate resolution (30 m) optical
+satellite imagery (Van Beusekom and others 2018;
+Feng and others 2020; Hall and others 2020). Airborne LiDAR data provide precise, 3-D information
+at 1-m spatial resolution regarding the heterogeneity in canopy height loss, vertical distribution
+of vegetation within the forest profile, and fractional canopy cover. By contrast, estimates derived
+from optical satellite data show more uniform
+damages across the Luquillo Experimental Forest
+(Feng and others 2020; Hall and others 2020), despite general agreement for greater initial changes
+in sub-pixel estimates of non-photosynthetic vegetation at low and mid elevations than for highelevation forest types. Differences between LiDARderived changes in forest structure and optical
+measures of fractional vegetation cover suggest that
+initial defoliation is an imperfect proxy for structural damages from hurricane disturbance.
+The spatial and vertical distributions of canopy
+openings following a major hurricane have not
+previously been quantified using LiDAR data. We
+estimated that Hurricane Maria generated canopy
+openings £ 2 m from branch loss and treefall
+events covering 13.5% of the study area, on average. Previous work at the plot scale reported even
+larger increases in gap area (vegetation height £
+2 m) from Hurricane Hugo in 1989 (Brokaw and
+Grear 1991), with estimates of pre- and post-hurricane percent gap area of 0.4% versus 26% in
+tabonuco forest and 2% versus 27% in palo colorado forest, respectively. Results from this study
+for comparable forest types in the MD and HI focus
+areas had somewhat lower pre-hurricane gap area
+(0.05% and 0.14%) and substantially lower posthurricane gap area (12.6% and 4.7% in tabonuco
+and palo colorado forests, respectively). Adding
+constraints for the minimum gap size, rather than
+summing all 1-m2 resolution pixels with canopy
+
+Forest Canopy Damage and Recovery After Maria
+heights £ 2 m, would further reduce the estimate
+of gap formation from Hurricane Maria in our
+study area despite widespread evidence of crown
+damages and openings in the mid and upper canopy.
+Three methodological factors may contribute to
+the large differences in estimated post-storm gap
+area between field and LiDAR studies. First, the
+time since the hurricane may influence the estimates of gap area (9–20 weeks in Brokaw and
+Grear versus 7 months in this study), as resprouting and reflushing of canopy leaves may rapidly
+restore canopy cover (Tanner and others 1991).
+Second, observer and laser-based estimates of forest
+structure differ substantially, even for common
+parameters such as tree height (for example,
+Hunter and others 2015). Brokaw and Grear (1991)
+collected field-based observations on a 5-m grid,
+with visual assessments of gap versus no-gap,
+compared to spatially and vertically explicit measures of forest structure at 1-m resolution, with
+objective, laser-based estimates of canopy material.
+Third, estimates in this study reflect landscape-scale
+responses to hurricanes, not individual plots, given
+the extensive survey of 439 ha. However, direct
+comparisons between damage from different hurricanes are also confounded by other factors,
+including differences in pre-hurricane forest structure and composition. For example, selective removal of specific size and species classes from
+sequential storms (for example, Uriarte and others
+2019) may reduce vulnerability at the stand scale
+in the short term.
+One of the unique measurements from the time
+series of LiDAR data in this study is the direct
+comparison of initial and delayed canopy turnover
+following the storm. Previous studies have considered the long-term effects of other disturbance
+types using LiDAR data, including selective logging
+(Rangel Pinagé and others 2019) and drought in
+Amazon forests (Leitold and others 2018), but delayed structural damages from extreme events such
+as hurricanes have not been previously reported.
+We found limited evidence for delayed structural
+damages following the storm. Although initial canopy turnover was 30 times higher than background turnover rates in Central Amazon forests
+(Leitold and others 2018; Rangel Pinagé and others
+2019), canopy turnover between 2018 and 2020 in
+this study was comparable to background rates in
+those studies, and lower than annualized estimates
+of branch and treefall events in Western Amazon
+forests (Marvin and Asner 2016).
+At least three factors may contribute to the rapid
+return to background turnover following Hurricane
+
+905
+
+Maria. First, structural damages within the first
+7 months following the storm were included in the
+assessment of hurricane turnover, such that shortterm delays in canopy turnover were attributed to
+initial forest damages. Second, canopy damages
+from Hurricane Maria reduced the mean crown size
+for surviving individuals; the per-tree change in
+fractional canopy cover would therefore be smaller
+in the second time interval (2018–2020). Third, the
+survival rate of damaged individuals may be higher
+than expected, given the magnitude of initial canopy damages. Previous studies suggest that rates
+of tree mortality from hurricanes are low (< 10%
+in Puerto Rican forests, see Frangi and Lugo 1991;
+Walker 1991; Zimmerman and others 1994; Uriarte
+and others 2019), even when entire forest stands
+suffer defoliation (Liu and others 2018) and large
+amounts of damage occur in the form of snapped or
+uprooted trees (Walker 1991; Basnet 1993; Vandermeer and others 1995). Overall, these findings
+suggest that hurricanes are a pulse disturbance,
+with direct impacts on individual tree and forest
+canopy structure, and long-term contributions
+from damaged canopy individuals to forest structure and function.
+
+Canopy Recovery
+Hurricane Maria created open-canopy conditions
+throughout the forest vertical profile, increasing
+light availability to spur rapid regrowth. Overall,
+nearly half of the forest area gained > 1 m in
+height between 2018 and 2020. These height gains
+led to closure of canopy openings < 10 m height
+from a combination of height growth of existing or
+new individuals and lateral crown expansion by
+surviving canopy trees or advanced regeneration.
+Repeat LiDAR measurements therefore suggest that
+rapid increases in leaf area captured by satellite
+vegetation indices (for example, Feng and others
+2020) were concentrated in lower canopy layers,
+rather than from the rapid recovery of taller canopy
+trees.
+We estimated that vertical and lateral growth
+contributed equally to canopy closure during this
+period, based on a threshold of maximum potential
+height growth (2 m y-1), with marked differences
+in height growth distributions between taller and
+shorter cohorts. Importantly, the upper forest canopy remained open in 2020, with 65% canopy
+cover at 10 m compared to closed-canopy conditions at that height before the hurricane. Evidence
+for limited crown expansion from taller individuals
+(for example, Figure 8) is consistent with previous
+reports of limited canopy tree plasticity adjacent to
+
+906
+
+V. Leitold and others
+
+new gaps in other tropical forests (Hunter and
+others 2015; Kellner and Asner 2014). Rates of
+crown expansion may have been further suppressed by crown damage from Hurricane Maria,
+triggering epicormic resprouting from branch and
+stem positions lower in the forest vertical profile
+(Bellingham and others 1994; Bellingham and
+others 1996). Overall, this balance between vertical
+and horizontal growth has important implications
+for the size structure and species composition of
+hurricane-impacted forests (Uriarte and others
+2009; Uriarte and others 2019). Our focus on canopy closure and increases in top of canopy height
+excluded important dynamics associated with
+recruitment and growth of understory vegetation
+that did not secure a canopy position following
+hurricane disturbance (Yih and others 1991; Vandermeer and others 1995; Uriarte and others 2004;
+Dietze and Clark 2008; Shiels and others 2010).
+Subsequent studies that consider the full LiDAR
+point cloud may offer insights regarding the spatial
+distribution and density of understory vegetation
+changes in response to initial changes in canopy
+structure from Hurricane Maria.
+Even with high-density airborne LiDAR data,
+differentiating vertical growth from lateral expansion following Hurricane Maria remains a challenge. For example, we excluded subtle losses and
+gains of fine branches within tree crowns (< 1 m
+height changes), potentially leading to an underestimate of height growth or release of surviving
+individuals. In addition, the use of a single
+threshold to separate height growth from crown
+expansion offers an initial estimate, whereas continuous distributions of height gains at all height
+levels illustrate the difficulty in separating specific
+mechanisms (for example, Figures 3, 8). Ideally,
+such a height threshold would be context-specific,
+based on observed differences in initial canopy
+height distributions and the presence or absence of
+advanced regeneration. Future studies that leverage other technologies may provide more confident
+separation of the mechanisms that contribute to
+structural changes in the post-hurricane environment. For example, terrestrial LiDAR scanners with
+higher point density and narrower beam divergence permit the separation of woody and leaf
+material, even for canopy vegetation in tall tropical
+forests (Boni Vicari and others 2019). Similarly,
+volumetric analyses of tree objects (for example,
+Ferraz and others 2016; Ferraz and others 2020),
+rather than the watershed approach used in this
+study, might also prove useful for evaluating the
+different processes of infilling within the original,
+pre-storm volumes occupied by canopy trees. Fi-
+
+nally, field data also provide important constraints
+on the relative abundance of tree species that resprout following crown damage to guide the
+interpretation of LiDAR-derived estimates of
+changes in canopy structure.
+
+Key Lessons for Ecosystem Models
+LiDAR-derived estimates of forest damage and
+recovery in this study provide four novel benchmarks for parameterization or validation of disturbance processes in ecosystem models. First, the
+current generation of ecosystem models represent
+the proportion of forest areas in different age classes
+since the last disturbance (for example, Fisher and
+others 2018). Spatial and temporal variability in
+gap formation is therefore a critical parameter to
+ensure that long-term simulations capture the impact of hurricane disturbance. Here, we estimated
+that 13.5% of the study area had vegetation £ 2 m following the storm; model-dependent
+translation of this LiDAR-derived estimate would
+likely be lower, given minimum patch sizes in some
+models that build on the pseudo-spatial representation of forest structure first developed in the
+Ecosystem Demography model (for example,
+Moorcroft and others 2001; Fischer and others
+2016; Longo and others 2020; Koven and others
+2020). Parameterization of new patches in size and
+age-structured models is an essential first step to
+improve the accuracy of post-disturbance recruitment following extreme events such as hurricanes.
+Second, trajectories of forest growth in ecosystem
+models typically vary based on plant functional
+types or plant traits, rather than disturbance. In this
+study, we estimated the proportion of the forested
+landscape that followed nine specific height gain
+and loss pathways from storm damage and initial
+forest recovery. These proportions, and the associated metrics of forest damage and recovery in each
+pathway, offer insights regarding damage-dependent rates and mechanisms of forest recovery, even
+for forests with similar species compositions and
+site conditions. Third, rates of canopy closure following hurricane disturbance at different heights
+within the forest vertical profile provide empirical
+values to constrain models that assume either
+perfect plasticity of canopy material or some modified plasticity (for example, Purves and others
+2008; Koven and others 2020). Open canopy conditions in 2020 demonstrated that light penetration
+and growth of understory vegetation or shorter
+canopy cohorts constituted an important fraction of
+post-storm recovery. Initial findings of equal contributions from vertical and lateral growth also
+
+Forest Canopy Damage and Recovery After Maria
+confirmed the influence of light penetration for
+promotion of shorter cohorts. Finally, this study
+provided clear evidence for the long-term impact of
+damaged individuals on the structure and function
+of tropical forests following hurricane disturbance.
+Limited height growth, crown expansion, and
+turnover of surviving canopy trees during 2018–
+2020 underscore the longevity of damaged individuals in post-hurricane forest environments.
+Ultimately, it may be possible to use LiDAR-derived
+measures of forest structure to directly parameterize plant structural traits in ecosystem models and
+account for reductions in productivity and evapotranspiration for damaged individuals. Combined,
+these metrics of forest disturbance provide new
+constraints on forest growth and carbon cycling
+following hurricane damages, opening new avenues for future research.
+
+Ecosystem Science with Repeat LiDAR
+The growing availability of repeat LiDAR and other
+3-D data paves the way for a wide array of
+ecosystem studies, and especially research to link
+disturbance processes with associated changes in
+the land–atmosphere exchange of carbon, water,
+and energy. Repeat measures of vegetation structure offer insight into the timing and potential
+cause of tree death or sublethal changes in forest
+structure, such as branch loss (for example, Leitold
+and others 2018). LiDAR may be a more direct
+approach to quantify processes such as branch loss
+(Scaranello and others 2019) that are generally
+ignored in conventional forest inventories because
+they are laborious to estimate, even with high levels of uncertainty (Van der Meer and Bongers
+1996; Palace and others 2008). Annual airborne
+LiDAR data collections are available for a range of
+ecosystems within the US National Ecological
+Observation Network (NEON), and a growing
+number of other long-term research sites have repeat LiDAR (for example, G-LiHT) or similar 3-D
+data derived from overlapping photographs (structure from motion). These repeat LiDAR and optical
+remote sensing measurements capture both finescale changes associated with vegetation phenology
+(for example, Park and others 2019) and regional
+phenomena, such as drought-induced tree mortality (for example, Asner and others 2015; Stovall
+and others 2019). Tower-based camera systems,
+such as PhenoCam (Richardson and others 2018),
+or autonomous laser scanning systems (Eitel and
+others 2016) can pinpoint the day or even the hour
+of disturbance events, including confirmation of
+collateral damages that can be difficult to recon-
+
+907
+
+struct using less frequent LiDAR or field measurements. Together, these 3-D data support new
+investigations into carbon turnover, the timing and
+duration of subsequent changes in forest structure,
+and the associated impacts on productivity,
+demography, runoff, and nutrient cycling across
+ecosystems. This type of monitoring activity is
+critical to benchmark background rates of disturbance and detect signatures of increasing disturbance frequency, such as subtle shifts in tree
+mortality associated with climate change (for
+example, Brienen and others 2015), or the severity
+of ecosystem impacts from single events, such as
+hurricanes.
+
+ACKNOWLEDGEMENTS
+Funding for this study was provided by the US
+Department of Energy (Terrestrial Ecosystem Science Program, Interagency Agreements with the
+US Forest Service # 89243018SSC000012 and with
+NASA # 89243018SSC000013, and support to VL,
+DCM, and MK from the Next Generation Ecosystem Experiment-Tropics, Office of Biological and
+Environmental Research). Additional funding was
+provided by the USDA Forest Service, US Department of Interior (National Institute of Food and
+Agriculture # 2018–67,030-28,124), and NASA.
+The USDA Forest Service International Institute of
+Tropical Forestry, Luquillo LTER, and NASA’s Airborne Science Program provided logistical support.
+
+DATA AVAILABILITY
+LiDAR data in this study are online at https://gliht.g
+sfc.nasa.gov. Data files used in the analysis are
+available from the NGEE Tropics Data Collection at
+http://dx.doi.org/10.15486/ngt/1797399.
+
+REFERENCES
+Asner GP, Brodrick PG, Anderson CB, Vaughn N, Knapp DE,
+Martin RE. 2015. Progressive forest canopy water loss during
+the 2012–2015 California drought. Proceedings of the National Academy of Sciences 113(2):E249–E255.
+Basnet K. 1993. Recovery of a Tropical Rain Forest after Hurricane Damage. Vegetation 109(1):1–4.
+Bellingham PJ, Tanner E, Healey J. 1994. Sprouting of Trees in
+Jamaican Montane Forests, after a Hurricane. Journal of
+Ecology 82(4):747–758.
+Bellingham PJ, Tanner EVJ, Rich PM, Goodland TCR. 1996.
+Changes in Light Below the Canopy of a Jamaican Montane
+Rainforest After a Hurricane. Journal of Tropical Ecology
+12(5):699–722.
+Bessette-Kirton EK, Cerovski-Darriau C, Schulz WH, Coe JA,
+Kean JW, Godt JW, Thomas MA. 2019. Landslides triggered
+by hurricane Maria: An assessment of an extreme event in
+Puerto Rico. GSA Today 29(6):4–10.
+
+908
+
+V. Leitold and others
+
+Bhatia K, Vecchi G, Murakami H, Underwood S, Kossin J. 2018.
+Projected Response of Tropical Cyclone Intensity and Intensification in a Global Climate Model. Journal of Climate
+31:8281–8303.
+Boni Vicari M, Disney MI, Wilkes P, Burt A, Calders K, Woodgate W. 2019. New framework for separating leaf and wood in
+terrestrial LiDAR point clouds. Methods in Ecology and Evolution 10:680–694.
+Brienen RJW, Phillips OL, Feldpausch TR, Gloor E, Baker TR,
+Lloyd J, Lopez-Gonzalez G, Monteagudo-Mendoza A, Malhi
+Y, Lewis SL, Vásquez Martinez R, Alexiades M, Álvarez Dávila
+E, Alvarez-Loayza P, Andrade A, Aragão LEOC, Araujo-Murakami A, Arets EJMM, Arroyo L, Aymard GA, Bánki OS,
+Baraloto C, Barroso J, Bonal D, Boot RGA, Camargo JLC,
+Castilho CV, Chama V, Chao KJ, Chave J, Comiskey JA,
+Cornejo Valverde F, da Costa L, de Oliveira EA, Di Fiore A,
+Erwin TL, Fauset S, Forsthofer M, Galbraith DR, Grahame ES,
+Groot N, Hérault B, Higuchi N, Honorio Coronado EN, Keeling
+H, Killeen TJ, Laurance WF, Laurance S, Licona J, Magnussen
+WE, Marimon BS, Marimon-Junior BH, Mendoza C, Neill DA,
+Nogueira EM, Núñez P, Pallqui Camacho NC, Parada A, Pardo-Molina G, Peacock J, Peña-Claros M, Pickavance GC, Pitman NCA, Poorter L, Prieto A, Quesada CA, Ramı́rez F,
+Ramı́rez-Angulo H, Restrepo Z, Roopsind A, Rudas A, Salomão RP, Schwarz M, Silva N, Silva-Espejo JE, Silveira M,
+Stropp J, Talbot J, ter Steege H, Teran-Aguilar J, Terborgh J,
+Thomas-Caesar R, Toledo M, Torello-Raventos M, Umetsu
+RK, van der Heijden GMF, van der Hout P, Guimarães Vieira
+IC, Vieira SA, Vilanova E, Vos VA, Zagt RJ. Long-term decline
+of the Amazon carbon sink. Nature 519: 344–348.
+Brokaw NVL. 1998. Cecropia schreberiana in the Luquillo
+Mountains of Puerto Rico. Botanical Review 64:91–120.
+Brokaw NVL. 1982. The Definition of Treefall Gap and Its Effect
+on Measures of Forest Dynamics. Biotropica 14:158–160.
+Brokaw NVL, Grear J. 1991. Forest Structure Before and After
+Hurricane Hugo at Three Elevations in the Luquillo Mountains, Puerto Rico. Biotropica 23(4):386–392.
+Canham CD, Thompson J, Zimmerman JK, Uriarte M. 2010.
+Variation in Susceptibility to Hurricane Damage as a Function
+of Storm Intensity in Puerto Rican Tree Species. Biotropica
+42:87–94.
+Chen Y, Randerson JT, Morton DC. 2015. Tropical North
+Atlantic ocean-atmosphere interactions synchronize forest
+carbon losses from hurricanes and Amazon fires. Geophysical
+Research Letters 42:6462–6470.
+Comita LS, Uriarte M, Thompson J, Jonckheere I, Canham CD,
+Zimmerman JK. 2009. Abiotic and biotic drivers of seedling
+survival in a hurricane-impacted tropical forest. Journal of
+Ecology 97:1346–1359.
+Cook BD, Corp LA, Nelson RF, Middleton EM, Morton DC,
+McCorkel JT, Masek JG, Ranson KJ, Ly V, Montesano PM.
+2013. NASA Goddard’s LiDAR, Hyperspectral and Thermal (GLiHT) Airborne Imager. Remote Sensing 5(8):4045–4066.
+Dietze MC, Clark JS. 2008. Changing the gap dynamics paradigm: vegetative regeneration control on forest response to
+disturbance. Ecological Monographs 78:331–347.
+Drew AP, Boley JD, Zhao YH, Johnston MH, Wadsworth FH.
+2009. Sixty-two years of change in subtropical wet forest
+structure and composition at El Verde, Puerto Rico. Interciencia 34:34–40.
+Eitel JUH, Höfle B, Vierling LA, Abellán A, Asner GP, Deems JS,
+Glennie CL, Joerg PC, LeWinter AL, Magney TS, Mandlburger
+G, Morton DC, Müller J, Vierling KT. 2016. Beyond 3-D: The
+
+new spectrum of lidar applications for earth and ecological
+sciences. Remote Sensing of Environment 186:372–392.
+Emanuel KA. 2013. Downscaling CMIP5 climate models shows
+increased tropical cyclone activity over the 21st century.
+Proceedings of the National Academy of Sciences
+110(30):12219–12224.
+Everham EM, Brokaw NVL. 1996. Forest Damage and Recovery
+from Catastrophic Wind. The Botanical Review 62:113–185.
+Espı́rito-Santo FDB, Gloor M, Keller M, Malhi Y, Saatchi S,
+Nelson B, Oliveira Junior RC, Pereira C, Lloyd J, Frolking S,
+Palace M, Shimabukuro YE, Duarte V, Mendoza AM, LópezGonzález G, Baker TR, Feldpausch TR, Brienen RJW, Asner
+GP, Boyd DS, Phillips OL. 2014. Size and frequency of natural
+forest disturbances and the Amazon forest carbon balance.
+Nature Communications 5:3434.
+Feng Y, Negrón-Juárez R I, Chambers JQ. 2020. Remote sensing
+and statistical analysis of the effects of hurricane Marı́a on the
+forests of Puerto Rico. Remote Sensing of Environment 247:
+111940.
+Ferraz A, Saatchi S, Mallet C, Meyer V. 2016. Lidar detection of
+individual tree size in tropical forests. Remote Sensing of
+Environment 183:318–333.
+Ferraz A, Saatchi SS, Longo M, Clark DB. 2020. Tropical tree
+size–frequency distributions from airborne lidar. Ecological
+Applications 30(7): e02154.
+Fischer R, Bohn F, de Paula MD, Dislich C, Groeneveld J, Gutiérrez AG, Kazmierczak M, Knapp N, Lehmann S, Paulick S,
+Pütz S, Rödig E, Taubert F, Köhler P, Huth A. 2016. Lessons
+learned from applying a forest gap model to understand
+ecosystem and carbon dynamics of complex tropical forests.
+Ecological Modelling 326:124–133.
+Fisher RA, Koven CD, Anderegg WRL, Christoffersen BO, Dietze
+MC, Farrior CE, Holm JA, Hurtt GC, Knox RG, Lawrence PJ,
+Lichstein JW, Longo M, Matheny AM, Medvigy D, MullerLandau HC, Powell TL, Serbin SP, Sato H, Shuman JK, Smith
+B, Trugman AT, Viskari T, Verbeeck H, Weng E, Xu C, Xu X,
+Zhang T, Moorcroft PR. 2018. Vegetation demographics in
+Earth System Models: A review of progress and priorities.
+Global Change Biology 24:35–54.
+Frangi J, Lugo A. 1991. Hurricane Damage to a Flood Plain
+Forest in the Luquillo Mountains of Puerto Rico. Biotropica
+23(4):324–335.
+González G, Waide RB, Willig MR. 2013. Advancements in the
+understanding of spatiotemporal gradients in tropical landscapes: a Luquillo focus and global perspective. Ecological
+Bulletins 54:245–250.
+Gould WA, González G, Carrero Rivera G. 2006. Structure and
+composition of vegetation along an elevational gradient in
+Puerto Rico. Journal of Vegetation Science 17:563–574.
+Hall J, Muscarella R, Quebbeman A, Arellano G, Thompson J,
+Zimmerman JK, Uriarte M. 2020. Hurricane-Induced Rainfall
+is a Stronger Predictor of Tropical Forest Damage in Puerto
+Rico Than Maximum Wind Speeds. Scientific Reports
+10:4318.
+Hoyos CD, Agudelo PA, Webster PJ, Curry JA. 2006. Deconvolution of the factors contributing to the increase in global
+hurricane intensity. Science 312:94–97.
+Hu T, Smith RB. 2018. The Impact of Hurricane Maria on the
+Vegetation of Dominica and Puerto Rico Using Multispectral
+Remote Sensing. Remote Sensing 10:827.
+
+Forest Canopy Damage and Recovery After Maria
+Hunter MO, Keller M, Morton D, Cook B, Lefsky M, Ducey M,
+Saleska S, Oliveira RC, Schietti J. 2015. Structural Dynamics
+of Tropical Moist Forest Gaps. PLoS ONE 10(7):0132144.
+Ibanez T, Keppel G, Menkes C, Gillespie TW, Lengaigne M,
+Mangeas M, Rivas-Torres G, Birnbaum P. 2018. Globally
+consistent impact of tropical cyclones on the structure of
+tropical and subtropical forests. Journal of Ecology 107:279–
+292.
+Kellner JR, Asner GP. 2014. Winners and losers in the competition for space in tropical forest canopies. Ecology Letters
+17(5):556–562.
+Knutson T, McBride JL, Chan J, Emanuel K, Holland G, Landsea
+C, Held I, Kossin JP, Srivastava AK, Sugi M. 2010. Tropical
+cyclones and climate change. Nature Geoscience 3:157–163.
+Knutson TR, Sirutis JJ, Zhao M, Tuleya RE, Bender M, Vecchi
+GA, Villarini G, Chavas D. 2015. Global Projections of Intense
+Tropical Cyclone Activity for the Late Twenty-First Century
+from Dynamical Downscaling of CMIP5/RCP4.5 Scenarios.
+Journal of Climate 28:7203–7224.
+Knutson T, Camargo SJ, Chan JCL, Emanuel K, Ho CH, Kossin J,
+Mohapatra M, Satoh M, Sugi M, Walsh K, Wu L. 2020.
+Tropical Cyclones and Climate Change Assessment: Part II:
+Projected Response to Anthropogenic Warming. Bulletin of
+the American Meteorological Society 101:E303–E322.
+Koven CD, Knox RG, Fisher RA, Chambers JQ, Christoffersen
+BO, Davies SJ, Detto M, Dietze MC, Faybishenko B, Holm J,
+Huang M, Kovenock M, Kueppers LM, Lemieux G, Massoud
+E, McDowell NG, Mueller-Landau HC, Needham JF, Norby
+RJ, Powell T, Rogers A, Serbin SP, Shuman JK, Swann AL,
+Varadharajan C, Walker AP, Wright SJ, Xu C. 2020. Benchmarking and parameter sensitivity of physiological and vegetation dynamics using the Functionally Assembled Terrestrial
+Ecosystem Simulator (FATES) at Barro Colorado Island, Panama. Biogeosciences 17:3017–3044.
+Leitold V, Keller M, Morton DC, Cook BD, Shimabukuro YE.
+2015. Airborne lidar-based estimates of tropical forest structure in complex terrain: opportunities and trade-offs for
+REDD+. Carbon Balance and Management 10(1):3.
+Leitold V, Morton DC, Longo M, dos-Santos MN, Keller M,
+Scaranello M. 2018. El Niño drought increased canopy turnover in Amazon forests. New Phytologist 219(3):959–971.
+Liu X, Zeng X, Zou X, González G, Wang C, Yang S. 2018. Litterfall Production Prior to and during Hurricanes Irma and
+Maria in Four Puerto Rican Forests. Forests 9(6):367.
+Longo M, Saatchi S, Keller M, Bowman K, Ferraz A, Moorcroft
+PR, Morton DC, Bonal D, Brando P, Burban B, Derroire G,
+dos-Santos MN, Meyer V, Saleska S, Trumbore S, Vincent G.
+2020. Impacts of degradation on water, energy, and carbon
+cycling of the Amazon tropical forests. Journal of Geophysical
+Research Biogeosciences 125: e2020JG005677.
+Lugo AE. 2008. Visible and invisible effects of hurricanes on
+forest ecosystems: an international review. Austral Ecology
+33:368–398.
+Marvin DC, Asner GP. 2016. Branchfall dominates annual carbon flux across lowland Amazonian forests. Environmental
+Research Letters 11: 094027.
+Moorcroft PR, Hurtt GC, Pacala SW. 2001. A method for scaling
+vegetation dynamics: The Ecosystem Demography model
+(ED). Ecological Monographs 71(4):557–586.
+Muscarella R, Kolyaie S, Morton DC, Zimmerman JK, Uriarte M.
+2020. Effects of topography on tropical forest structure depend
+on climate context. Journal of Ecology 108:145–159.
+
+909
+
+National Oceanic and Atmospheric Administration (NOAA).
+2017. National Hurricane Center, Tropical Cyclone Report:
+Hurricane Maria. Available online at: https://www.nhc.noa
+a.gov/data/tcr/AL152017_Maria.pdf. Accessed November 13,
+2020.
+Palace M, Keller M, Silva H. 2008. Necromass production:
+studies in undisturbed and logged Amazon forests. Ecological
+Applications 18:873–884.
+Park JY, Muller-Landau HC, Lichstein JW, Rifai SW, Dandois JP,
+Bohlman SA. 2019. Quantifying Leaf Phenology of Individual
+Trees and Species in a Tropical Forest Using Unmanned Aerial
+Vehicle (UAV) Images. Remote Sensing 11(13):1534.
+Plowright A. 2020. ForestTools: Analyzing Remotely Sensed
+Forest Data. R package version 0.2.1. Available online at: h
+ttps://cran.r-project.org/web/packages/ForestTools/ForestTool
+s.pdf. Accessed November 13, 2020.
+Purves DW, Lichstein JW, Strigul N, Pacala SW. 2008. Predicting
+and understanding forest dynamics using a simple
+tractable model. Proceedings of the National Academy of
+Sciences 105(44):17018–17022.
+Quiñones M, Parés-Ramos IK, Gould WA, González G. McGinley
+K, Rı́os P. 2018. El Yunque National Forest Atlas. General
+Technical Report IITF-GTR-47. San Juan, PR: U.S. Department of Agriculture, Forest Service, International Institute of
+Tropical Forestry. 63p.
+R Core Team. 2020. R: A language and environment for statistical computing. v.3.6.2. R Foundation for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/.
+Rangel Pinagé E, Keller M, Duffy P, Longo M, dos-Santos MN,
+Morton DC. 2019. Long-Term Impacts of Selective Logging on
+Amazon Forest Dynamics from Multi-Temporal Airborne LiDAR. Remote Sensing 11(6):709.
+Richardson AD, Hufkens K, Milliman T, Aubrecht DM, Chen M,
+Gray JM, Johnston MR, Keenan TF, Klosterman ST, Kosmala
+M, Melaas EK, Friedl MA, Frolking S. 2018. Tracking vegetation phenology across diverse North American biomes using
+PhenoCam imagery. Scientific Data 5:180028.
+Román MO, Stokes EC, Shrestha R, Wang Z, Schultz L, Carlo
+EAS, Sun Q, Bell J, Molthan A, Kalb V, Ji C, Seto KC, McClain
+SN, Enenkel M. 2019. Satellite-based assessment of electricity
+restoration efforts in Puerto Rico after Hurricane Maria. PLoS
+ONE 14(6): e0218883.
+Runkle J, Yetter T. 1987. Treefalls Revisited: Gap Dynamics in
+the Southern Appalachians. Ecology 68(2):417–424.
+Scaranello MAS, Keller M, Longo M, dos-Santos MN, Leitold V,
+Morton DC, Pinagé ER, Espı́rito-Santo FDB. 2019. Estimation
+of coarse dead wood stocks in intact and degraded forests in
+the Brazilian Amazon using airborne lidar. Biogeosciences
+16(17):3457–3474.
+Seidl R, Fernandes PM, Fonseca TF, Gillet F, Jonsson AM,
+Merganicova K, Netherer S, Arpaci A, Bontemps JD, Bugmann H, Gonzalez-Olabarria JR, Lasch P, Meredieu C, Moreira F, Schelhaas MJ, Mohren F. 2011. Modelling natural
+disturbances in forest ecosystems: a review. Ecological Modelling 222:903–924.
+Shiels AB, Zimmerman JK, Garcı́a-Montiel DC, Jonckheere I,
+Holm J, Horton D, Brokaw N. 2010. Plant responses to simulated hurricane impacts in a subtropical wet forest, Puerto
+Rico. Journal of Ecology 98(3):659–673.
+Shiels AB, González G, Lodge DJ, Willig MR, Zimmerman JK.
+2015. Cascading Effects of Canopy Opening and Debris
+Deposition from a Large-Scale Hurricane Experiment in a
+Tropical Rain Forest. BioScience 65(9):871–881.
+
+910
+
+V. Leitold and others
+
+Silander SR. 1979. A study of the ecological life history of Cecropia peltata L., an early secondary successional species in
+the rain forest of Puerto Rico. Thesis (M.S.), University of
+Tennessee, Institute of Ecology, Knoxville. 94p.
+Silver WL, Vogt KA. 1993. Fine Root Dynamics Following Single
+and Multiple Disturbances in a Subtropical Wet Forest
+Ecosystem. Journal of Ecology 81(4):729–738.
+Stovall AEL, Shugart H, Yang X. 2019. Tree height explains
+mortality risk during an intense drought. Nature Communications 10:4385.
+Tanner EVJ, Kapos V, Healey JR. 1991. Hurricane Effects on
+Forest Ecosystems in the Caribbean. Biotropica 23(4):513–
+521.
+Tanner EVJ, Rodriguez-Sanchez F, Healey JR, Holdaway RJ,
+Bellingham PJ. 2014. Long-term hurricane damage effects on
+tropical forest tree growth and mortality. Ecology 95:2974–
+2983.
+Trenberth KE, Cheng L, Jacobs P, Zhang Y, Fasullo J. 2018.
+Hurricane Harvey links to ocean heat content and climate
+change adaptation. Earth’s Future 6:730–744.
+Uriarte M, Canham CD, Thompson J, Zimmerman JK. 2004. A
+Neighborhood analysis of tree growth and survival in a hurricane-driven tropical forest. Ecological Monographs 74:591–
+614.
+Uriarte M, Canham CD, Thompson J, Zimmerman JK, Brokaw
+N. 2005. Seedling recruitment in a hurricane driven tropical
+forest: light limitation, density-dependence and the spatial
+distribution of parent trees. Journal of Ecology 93:291–304.
+Uriarte M, Canham CD, Thompson J, Zimmerman JK, Murphy
+L, Sabat AM, Fetcher N, Haines BL. 2009. Natural disturbance
+and human land use as determinants of tropical forest
+dynamics: results from a forest simulator. Ecological Monographs 79:423–443.
+
+Available online at https://tes.science.energy.gov/files/vegeta
+tiondynamics.pdf. Accessed November 13, 2020.
+Van Beusekom AE, Álvarez-Berrı́os NL, Gould WA, Quiñones
+M, González G. 2018. Hurricane Maria in the U.S. Caribbean:
+Disturbance forces, variation of effects, and implications for
+future storms. Remote Sensing 10:1–14.
+Van Beusekom AE, González G, Stankavich S, Zimmerman JK,
+Ramı́rez A. 2020. Understanding tropical forest abiotic response to hurricanes using experimental manipulations, field
+observations, and satellite data. Biogeosciences 17(12):3149–
+3163.
+Vandermeer J, Mallona M, Boucher D, Yih K, Perfectos I. 1995.
+Three Years of Ingrowth Following Catastrophic Hurricane
+Damage on the Caribbean Coast of Nicaragua: Evidence in
+Support of the Direct Regeneration Hypothesis. Journal of
+Tropical Ecology 11(3):465–471.
+Van der Meer PJ, Bongers F. 1996. Patterns of tree-fall and
+branch-fall in a tropical rain forest in French Guiana. Journal
+of Ecology 84(1):19–29.
+Vargas R, Trumbore SE, Allen MF. 2009. Evidence of old carbon
+used to grow new fine roots in a tropical forest. New Phytologist 182:710–718.
+Walker L. 1991. Tree Damage and Recovery from Hurricane
+Hugo in Luquillo Experimental Forest. Puerto Rico. Biotropica
+23(4):379–385.
+Walker LR. 1995. Timing of post-hurricane tree mortality in
+Puerto Rico. Journal of Tropical Ecology 11:315–320.
+Weaver PL. 2010. Forest Structure and Composition in the
+Lower Montane Rain Forest of the Luquillo Mountains,
+Puerto Rico. Interciencia 35:640–646.
+Yih K, Boucher D, Vandermeer J, Zamora N. 1991. Recovery of
+the Rain Forest of Southeastern Nicaragua After Destruction
+by Hurricane Joan. Biotropica 23(2):106–113.
+
+Uriarte M, Thompson J, Zimmerman JK. 2019. Hurricane Maria
+tripled stem breaks and doubled tree mortality relative to
+other major storms. Nature Communications 10:1362.
+
+Young T, Hubbell S. 1991. Crown Asymmetry, Treefalls, and
+Repeat Disturbance of Broad-Leaved Forest Gaps. Ecology
+72(4):1464–1471.
+
+U.S. Department of Energy (U.S. DOE). 2018. Disturbance and
+Vegetation Dynamics in Earth System Models; Workshop
+Report, DOE/SC-0196. Office of Biological and Environmental
+Research, U.S. Department of Energy Office of Science.
+
+Zimmerman JK, Everham EM, Waide RB, Lodge DJ, Taylor CM,
+Brokaw NVL. 1994. Responses of Tree Species to Hurricane
+Winds in Subtropical Wet Forest in Puerto-Rico: Implications
+for Tropical Tree Life Histories. Journal of Ecology 82:911–922.
+
+

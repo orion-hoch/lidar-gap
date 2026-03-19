@@ -1,0 +1,1906 @@
+Received: 20 October 2022
+
+| Revised: 6 March 2023 | Accepted: 6 April 2023
+
+DOI: 10.1111/btp.13226
+
+ORIGINAL ARTICLE
+
+Out of steady state: Tracking canopy gap dynamics across
+Brazilian Amazon
+Eric Bastos Gorgens1
+| Michael Keller2,3
+| Toby Jackson4
+|
+5
+6
+Daniel Magnabosco Marra
+| Cristiano Rodrigues Reis
+|
+6
+4
+Danilo Roberti Alves de Almeida
+| David Coomes
+| Jean Pierre Ometto7
+1
+
+Departamento de Engenharia Florestal, Campus JK, Universidade Federal dos Vales do Jequitinhonha e Mucuri, Diamantina, Brazil
+
+2
+
+USDA Forest Service, International Institute of Tropical Forestry, Rio Piedras, Puerto Rico, USA
+
+3
+
+Jet Propulsion Laboratory, Pasadena, California, USA
+
+4
+
+Plant Sciences and Conservation Research Institute, University of Cambridge, Cambridge, UK
+
+5
+
+Max-­Planck Institute for Biogeochemistry, Jena, Germany
+
+6
+
+Departamento de Ciências Florestais, Universidade de São Paulo, Piracicaba, Brazil
+
+7
+
+Instituto Nacional de Pesquisas Espaciais, São José dos Campos, Brazil
+
+Correspondence
+Eric Bastos Gorgens, Departamento
+de Engenharia Florestal, Campus JK,
+Universidade Federal dos Vales do
+Jequitinhonha e Mucuri, Diamantina, MG
+CEP 39100-­0 00, Brazil.
+Email: eric.gorgens@ufvjm.edu.br
+Funding information
+Coordenação de Aperfeiçoamento
+de Pessoal de Nível Superior Brasil,
+Grant/Award Number: 001; Conselho
+Nacional de Desenvolvimento Científico
+e Tecnológico, Grant/Award Number:
+301661/2019-­7 and 403297/2016-­
+8; Universidade Federal dos Vales do
+Jequitinhonha e Mucuri (UFVJM); São
+Paulo Research Foundation, Grant/Award
+Number: 2019/14697-­0 and 2018/21338-­
+3; UK Natural Environment Research
+Council, Grant/Award Number: NE/
+S010750/1; Amazon Fund, Grant/Award
+Number: 14.2.0929.1; National Academy
+of Sciences; US Agency for International
+Development, Grant/Award Number:
+AID-­OAA-­A-­11-­0 0012
+Associate Editor: Ferry Slik
+Handling Editor: Laura Schneider
+
+Abstract
+Canopy gaps are evidence of disturbances on forest landscapes. A forest stand is in
+constant flux, with long stretches of biomass accumulation punctuated by episodic
+disturbances. We used multitemporal airborne laser scanning data to compare the
+gap dynamics of four Amazon forest sites. We assessed gap dynamics over 1.9–­
+3.8 years between 2017 and 2020 at sites in the central, central eastern, southeastern, and northeastern regions of the Brazilian Amazon, over areas ranging from 590
+to 1205 ha at each site. Gap size ranged from a minimum of 10 m2 to a maximum of
+about 10,000 m2. We analyzed four stages of gap dynamics: formation, expansion,
+persistence, and recovery based on two consecutive airborne laser scanning surveys.
+The gap fraction at our study sites varied between 1.26% and 7.84%. All the sites
+have similar proportion of gaps among gap size classes. What notably differed among
+sites was not the gap size-­distribution, but the relative importance of stages of gap
+dynamics. Expansion and persistence rates ranged from 12 to 118 m2 ha−1. The gap
+formation rate (formation + expansion) was lower than the recovery rate for three of
+the four study sites. In contrast, the southeastern site has 1.44 times more area in
+formation and expansion compared to gap recovery. Over the 2–­4 years interval of
+our study, no site was close to steady state. Multitemporal analyses of large areas over
+many years are needed to improve our understanding of tropical forest dynamics.
+KEYWORDS
+
+Amazon, gap fraction, gap recovery, tropical Forest
+
+© 2023 Association for Tropical Biology and Conservation.
+Biotropica. 2023;55:755–766.	﻿
+
+wileyonlinelibrary.com/journal/btp
+
+| 755
+
+|
+
+1
+
+|
+
+GORGENS et al.
+
+I NTRO D U C TI O N
+
+period of five years was highly stochastic, with 23% of the events
+recorded in a 42-­day interval. Analyzing big gaps formed by blow-
+
+Gaps are a manifestation of disturbance in forest landscapes
+
+downs, about 40% of all Amazon Forest blowdown area in 2005
+
+(Marra et al., 2018; Muscolo et al., 2014; Whitmore, 1989). We
+
+was concentrated in just 12% of the Amazon Forest area (Araujo
+
+can understand disturbance as “any relatively discrete event in
+
+et al., 2017). The stochastic nature of gaps complicates prediction
+
+time that disrupts ecosystem, community or population struc-
+
+of the long-­term trends of biomass accumulation and forest turn-
+
+ture and changes resources, substrate availability, or the phys-
+
+over rates. Chambers et al. (2013) recommended studying plots
+
+ical environment” (White & Pickett, 1985). Disturbance creates
+
+larger than 10 ha over shorter time periods or small plots (1 ha) over
+
+a landscape with patches of different successional stages. The
+
+very long time periods to maximize the detection of temporal dis-
+
+size distribution and return frequency of disturbance events, and
+
+turbance trends.
+
+subsequent recovery processes, determine to a large extent the
+
+The use of airborne laser scanning to cover large areas with high
+
+spatial scale over which an old-­g rowth steady state develops
+
+density of returns and multitemporal flights provide powerful data
+
+(Chamber et al., 2013).
+
+to study canopy dynamics. Several studies have characterized gap
+
+Hartshorn (1978) estimated that 75% of tree species in tropical
+
+size frequency in tropical forest using single lidar acquisitions (Asner
+
+forests depend on canopy gaps for successful regeneration, mak-
+
+et al., 2013; Dalagnol et al., 2019, 2021; Espírito-­Santo et al., 2014;
+
+ing gap dynamics a fundamental process in tropical forest ecology.
+
+Hunter et al., 2015; Kellner & Asner, 2009; Zhang, 2008). However, a
+
+Gaps can be formed by endogenous senescence of single canopy
+
+limited number of studies have used multitemporal lidar to map gap
+
+trees or branches (Arellano et al., 2021; Hartshorn, 1978; Schaetzl
+
+creation directly (Hunter et al., 2015; Leitold et al., 2018).
+
+et al., 1988). Recent studies, often using remote sensing, demon-
+
+Here, we studied the size distribution of gaps and gap dynamics
+
+strate that exogenous disturbance agents can also cause or amplify
+
+at four Amazonian upland forest sites, including a site where we dis-
+
+gaps. For example, wind can snap or uproot trees (Espírito-­Santo
+
+covered the tallest trees known from the Amazon region (Gorgens
+
+et al., 2010; Marra et al., 2014; Negrón-­Juárez et al., 2011; Silvério
+
+et al., 2019). Using airborne lidar collected at two time periods in
+
+et al., 2019; Toledo et al., 2013); lightning strikes can cause tree
+
+each of our study sites, we addressed three questions: (a) Do the
+
+mortality and branch fall (Gora et al., 2020); and the frequency
+
+distributions of gap sizes vary among sites and are the differences
+
+of extreme rainfall events may increase the frequency of gaps
+
+preserved over time? (b) Are the rates of new gap formation, gap
+
+(Araujo et al., 2021; Cushman et al., 2022; Peixoto, 2021). Dalagnol
+
+expansion, gap persistence, and gap recovery significantly different
+
+et al. (2021) analyzed large-­scale patterns of the distribution of gaps
+
+among sites? (c) Are losses of canopy height due to gap formation
+
+in the Brazilian Amazon. They found 20%–­35% more gaps in the
+
+and expansion compensated by increased growth of surviving and
+
+western and southeastern Amazon compared to the central-­east and
+
+successional trees? Our findings give us new insights into gap dy-
+
+north based mainly on data acquired at one point in time. Limited
+
+namics at the landscape scale and across a climate and environmen-
+
+studies comparing multitemporal lidar against estimates from single
+
+tal gradient of Amazon.
+
+time points caution that extrapolation from single time acquisitions
+is not reliable (Hunter et al., 2015).
+A forest stand is in constant flux, with long stretches of biomass
+accumulation punctuated by episodic disturbances, cautioning us
+not to assume that forests are in steady-­state (Chambers et al., 2013).
+
+2
+
+|
+
+M ATE R I A L S A N D M E TH O DS
+
+2.1 | Study sites
+
+Jucker (2021) concluded that we need more modeling studies to understand the controls of tropical forest gaps. More empirical data
+
+We assessed gap dynamics at four study sites in the Brazilian
+
+are required for reliable assessments and models of mechanisms of
+
+Amazon: Ducke (1205 ha), Tapajos (1026 ha), Tanguro (590 ha), and
+
+tree mortality influencing the size distribution and dynamics of can-
+
+Jari (813 ha; Figure 1). All study sites were covered with old-­growth
+
+opy gaps. Gaining further understanding on the size distribution and
+
+forest, with no anthropogenic disturbances detected in the Landsat
+
+dynamics of gaps requires sorting out the influence of branch falls,
+
+archive (approximately 40 years). The northeast site (Jari) is located
+
+single and multiple treefalls because these disturbance and mortal-
+
+in the Jari basin, between the states of Pará and Amapá states. The
+
+ity modes overlap in size (Leitold et al., 2018). Understanding how
+
+southeast site (Tanguro) is located in the state of Mato Grosso, in the
+
+gap size and frequency influence recovery and successional changes
+
+Xingu basin (Silvério et al., 2019). This region is marked by the transi-
+
+in structure and diversity is also crucial (Chambers et al., 2013;
+
+tion between Cerrado and Amazon. The central-­east site (Tapajos) is
+
+Denslow et al., 1998; Marra et al., 2018).
+
+located in the state of Pará, in the Tapajós basin. The fourth site is
+
+Succession-­inducing events (usually associated with large
+
+located in central Amazon (Ducke), in the state of Amazonas at the
+
+gaps, >1000 m2) are difficult to represent by traditional forest in-
+
+Amazonas basin. The sites cover a range of climatic conditions, which
+
+ventory approaches. It is important to consider landscape-­scale
+
+is detailed in Table 1. For example, annual average precipitation
+
+processes when studying old-­growth forest ecosystems. For a
+
+ranges from about 1600 mm year−1 in Tanguro to ~2300 mm year−1
+
+50 ha plot, Araujo et al. (2021) revealed that gap formation over a
+
+at Jari (Table 1).
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+756
+
+F I G U R E 1 Four study sites in the Brazilian Amazon, highlighting a study area located in the central Amazon—­CN (Reserva Ducke) and a
+short sample of the canopy height model used to map gaps. Jari is located in the northeast (NE), Tapajos in central-­east (CE), Tanguro in the
+southeast (SE).
+
+2.2 | Airborne laser scanning data collection
+
+2.3 | Detecting gaps in ALS data
+
+Airborne laser scanning (ALS or lidar) uses a laser mounted in an air-
+
+The gaps were identified, and their area computed from the canopy
+
+plane to measure the distance to the land surface. The laser sends
+
+height model. Following Hunter et al. (2015), we define gaps as con-
+
+out a pulse of light, and the sensor measures the time it takes for
+
+tiguous areas with canopy height less than or equal to 10 m and area
+
+the light to bounce back. Collecting many of these laser returns
+
+greater than or equal 10 m2. Hunter et al. (2015) also studied two of
+
+over an area yields a three-­dimensional point-­cloud of the surface
+
+the sites included in the present study (Ducke and Tapajos). We com-
+
+(Lefsky et al., 2002). The ALS data were acquired twice for each site
+
+pared the frequencies of these gap size classes between the four
+
+as shown in Table 2. Detailed information about the flight and data
+
+sites in the first campaign using a chi-­squared test. The contingency
+
+acquisition parameters was previously published (Cordeiro, 2021;
+
+tables to compute the chi-­squared test were built considering a bin
+
+Gorgens et al., 2019; Leitold et al., 2018). The minimum return den-
+
+size of 100 m2. The same comparison was performed for the four
+
+sity for each cloud was 4 returns per m2. That value is adequate to
+
+sites considering the second flight (Figure 2a). Additionally, we were
+
+accurately quantify canopy height in tropical forests even in com-
+
+also compared if the distribution at each site changed over time (i.e.,
+
+plex terrain (Leitold et al., 2015; Silva et al., 2017).
+
+between consecutive campaigns; Figure 2b).
+
+Tree height is the basic information used in this study. To calculate tree height, a canopy height model (CHM) representing the
+top surface of the canopy must be normalized for ground height.
+
+2.4 | Gap dynamics
+
+Ground height is estimated from a digital terrain model (DTM). We
+calculated a DTM for each point-­cloud based on lidar returns clas-
+
+To assess the gap dynamics, we identify four transitions between
+
+sified as ground by the Cloth Simulation Function algorithm (Zhang
+
+closed canopy (non-­gap) and gap states (Figure 3). The base state
+
+et al., 2016) implemented in lidR package (Roussel & Auty, 2021) at
+
+for an area of forest is a closed canopy. From that state, an area can
+
+a resolution of 1 m. The digital CHM of each flight was calculated
+
+move to the gap state by the formation of a new gap (1); an existing
+
+from the normalized point cloud, using the maximum height (point
+
+gap may expand (2) or persist (3); finally, a gap may recover to the
+
+elevation minus ground elevation) for each 1 m grid cell.
+
+state of close canopy (4). Formation quantifies new gap area formed
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+| 757
+
+GORGENS et al.
+
+GORGENS et al.
+
+Site
+
+Jari
+
+Ducke
+
+Tapajos
+
+Tanguro
+
+Temp. max. (°C)
+
+32.0
+
+32.6
+
+31.5
+
+34.0
+
+Average temp. (°C)
+
+25.4
+
+27.0
+
+25.1
+
+25.2
+
+Temp. season. (CV%)
+
+6.0
+
+4.9
+
+5.4
+
+10.2
+
+−1
+
+v-­Speed (m s )
+
+1.4
+
+2.2
+
+1.8
+
+3.2
+
+u-­Speed (m s−1)
+
+0.4
+
+1.7
+
+1.4
+
+2.1
+
+Average precip. (mm year−1)
+
+2335
+
+2194
+
+2012
+
+1618
+
+Precip. driest (mm month−1)
+
+60.7
+
+76.0
+
+45.0
+
+1.0
+
+Precip. wettest (mm month )
+
+346.3
+
+285.0
+
+368.0
+
+284.0
+
+Precip. season. (CV %)
+
+48.3
+
+41.0
+
+65.0
+
+80.0
+
+−1
+
+−1
+
+Lightning rate (flash year )
+
+6.9
+
+37.0
+
+11.8
+
+19.6
+
+FAPAR (%)
+
+83.4
+
+84.9
+
+85.0
+
+63.0
+
+Elevation (m.a.s.l.)
+
+262.3
+
+104.0
+
+198.0
+
+327.0
+
+Clear days (days year−1)
+
+51.3
+
+68.4
+
+53.2
+
+167.2
+
+Days >20 mm (days year )
+
+37.9
+
+36.6
+
+44.0
+
+31.2
+
+Maximum height (m)
+
+75
+
+55
+
+58
+
+40
+
+−1
+
+TA B L E 1 Study sites description
+based on environmental layers
+(Gorgens et al., 2021).
+
+Note: Temp indicates temperature (in °C), season indicates the coefficient of variation (CV in %
+based on monthly precipitation), precip indicates precipitation (in mm year−1), FAPAR indicates
+fraction of absorbed photosynthetically active radiation (in %), v-­speed and u-­speed indicate
+north–­south and east–­west average wind speeds, respectively (m s−1), elevation indicates the
+ground elevation above sea level (in m), clear days indicate the number of days without clouds in a
+year (days year−1), days >20 mm indicates number of days in a year with precipitation greater than
+20 mm, and maximum height indicates the approximate maximum tree height by site.
+
+Site
+
+Location
+
+First acquisition
+
+Second
+acquisition
+
+Time
+difference
+(years)
+
+Jari
+
+Northeast
+
+January 2017
+
+October 2020
+
+3.8
+
+Ducke
+
+Center
+
+September 2017
+
+October 2020
+
+3.1
+
+Tapajos
+
+Center-­east
+
+March 2017
+
+October 2020
+
+3.6
+
+Tanguro
+
+Southeast
+
+October 2018
+
+September 2020
+
+1.9
+
+TA B L E 2 Airborne lidar campaigns
+used in this study.
+
+Note: The time difference between the first and second acquisitions is given in years (y).
+
+after the first survey, that is not contiguous with a prior gap. Gap
+
+based on prior studies (Chambers et al., 2013; Leitold et al., 2018).
+
+expansion occurs when the first state was closed canopy, the second
+
+Our classification was adapted from detailed field studies conducted
+
+state was gap, and it is contiguous with an existing gap. Persistence
+
+by Leitold et al. (2018), who compared gaps identified by lidar and
+
+is defined for a polygon identified as a gap in the first flight and that
+
+the necromass found in coarse woody debris surveys at the Tapajos
+
+remained gap in the second flight. Recovery is defined as an area
+
+site to separate branch fall (small gaps), single treefall or multiple
+
+of gap in the first flight that becomes closed canopy in the second
+
+branch fall (medium gaps), and multiple treefall events (large gaps).
+
+flight. Full gap recovery and partial gap recovery are not discrimi-
+
+The dynamics of new gaps was expressed as area of gaps per hectare
+
+nated by the overlay method applied here.
+
+per year (m2 ha−1 year−1) and as number of gaps per hectare per year
+
+We computed state transitions by overlapping the gap polygon
+layers from the first and second campaigns (Figure 4). The results
+2
+
+−1
+
+−1
+
+(n ha−1 year−1).
+Finally, we computed the rates of change in canopy height for
+
+were presented in area of gaps per hectare, per year (m ha year ),
+
+closed canopy, persisting gaps and recovered gaps. The computa-
+
+and in number of gaps per hectare, per year (n ha−1 year−1) to nor-
+
+tion was performed by subtracting the canopy height model derived
+
+malize the varying periods between consecutive surveys. Time dif-
+
+from the second flight by the canopy height model derived from the
+
+ferences between flights ranged from 1.9 to 3.8 years as shown in
+
+first flight, and dividing them by the period between flights. The rate
+
+Table 2.
+
+expresses the change in height by year (m year−1) and was aggregated
+
+In addition to accounting for transitions, we investigated the size
+
+by average to the respective polygon. Data analysis was performed
+
+of new gaps (gaps not detected in the first flight) classifying them
+
+in R 4.1.1 (R Core Team, 2021) and QGIS 3.18 (QGIS Development
+
+into small (<100 m2), medium (100–­500 m2), and large (>500 m2) gaps
+
+Team, 2021).
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+|
+
+758
+
+F I G U R E 2 Analysis performed to compare the frequency of gap size between areas (a) and over time (b).
+
+To facilitate the presentation, instead of size classes considered in the statistical analysis, we grouped the gaps into small
+(<100 m2), medium (100–­5 00 m2), and large (>500 m2) classes
+(Table 3). The density of gaps observed in this study varied between 3.50 and 8.72 gaps ha−1. The largest number of gaps was
+observed at Tapajos, for the first survey (8.52 gaps ha−1), and at
+Tanguro for the second flight (8.75 gaps ha−1). The lowest was observed at Ducke and Jari (first flight in Ducke: 5.26 gaps ha−1 and
+second flight in Jari: 3.5 gaps ha−1). During the monitored period,
+only the Tanguro site showed an increase in the number and area
+of gaps (increase of 8% in terms of number and 18% in terms of
+area), which changed from 7.99 gaps ha−1 (area: 399 m2 ha−1) to
+8.72 gaps ha−1 (area: 472 m2 ha−1).
+F I G U R E 3 Forests are composed of two states, gap and closed
+canopy. When closed canopy becomes gap, we call this new gap
+formation. Old gaps may increase in area (gap expansion) or lose area
+to the closed canopy by regrowth (recovery).
+
+Unsurprisingly, gap number was dominated by relatively small
+gaps. For all sites in both surveys, the percentage of gaps <100 m2
+ranged from 82% (Tapajos 2017) to 95% (Ducke 2020). Ducke always had the largest proportion of small gaps, and the Tapajos site
+always had the largest proportion of large gaps (Table 3). The Tapajos
+
+3
+
+|
+
+R E S U LT S
+
+site had the largest number of gaps on average and also, by far, the
+largest gap area. The distribution of gap area was relatively even
+across the small, medium, and large categories in Tapajos and Jari,
+
+Gap size frequency in all studied sites followed a power-­law distri-
+
+whereas at Tanguro and especially at Ducke, medium and large gaps
+
+bution with a high proportion of small gaps and a small proportion
+
+accounted for only a small portion of the gap area (Table 3).
+
+of large gaps (Figure 5). While Ducke did not have gaps greater
+
+The highest new gap formation rate was observed in Tanguro
+
+than 2500 m2 , Jari had gaps with up to ~12,500 m2 . All the sites
+
+with 46.52 m2 ha−1 year−1, followed by Jari and Tapajos with
+
+had a similar proportion of gaps among the size classes (p-­value
+for χ2 ~ .26 for the first flight and .18 for the second flight). Even
+
+~33 m2 ha−1 year−1, and Ducke 15.89 m2 ha−1 year−1 (Table 4). Tapajos
+and Tanguro had the greatest gap expansion rates, followed by Jari
+
+though the forest in Jari contained larger gaps, they still have a
+
+and Ducke. Considering the increase in gap area as formation plus
+
+small proportion of large gaps overall. Comparing the monitored
+
+expansion, Tanguro and Tapajos had more than 1% of total forest
+
+years, we found changes in the gap distributions for all sites.
+
+canopy area converted to gaps annually, with Jari at about 0.8% and
+
+The changes were significant in Tapajos and Ducke (p-­value for
+
+Ducke well below that level at about 0.3%.
+
+χ2 < .05), while Tanguro and Jari did not show statistically signifi-
+
+Stasis in the canopy is the rule over short time periods. For
+
+cant differences between the first and second flight gaps distribu-
+
+the duration of our investigation (2–­3 years) at four sites, between
+
+tions (p-­value for χ2 ~ .5).
+
+97.2% and 99.1% of the canopy remained in the same state that it
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+| 759
+
+GORGENS et al.
+
+|
+
+GORGENS et al.
+
+F I G U R E 4 Extracting gaps based on
+the canopy height model generated from
+airborne laser scanning cloud. Overlapping
+two gaps vector layers, it was possible
+to quantify the formation of a new gap,
+existing gap expanding or persisting.
+
+began annually (i.e., closed canopy remained closed canopy and
+
+differences between the gap distribution for the same site when
+
+gap remained gap). Comparing the gap formation rate (formation +
+
+compared between surveys ~3 years apart. In comparison with the
+
+expansion) to recovery rate, Ducke showed more gaps recovering
+
+static gap distributions, we found large differences in the gap dy-
+
+than being formed (0.48 m2 being formed to 1 m2 recovering to), fol-
+
+namics (new gap formation, gap expansion, gap persistence, and gap
+
+lowed by Jari (0.65–­1) and Tapajos (0.70–­1). Tanguro exhibit an im-
+
+recovery) among sites (Q2). Interestingly, we found that for the brief
+
+2
+
+balance between formation and recovery, showing 1.44 m of newly
+
+interval investigated, none of our sites was in a steady state. Thus, in
+
+formed gap for each 1 m2 recovered (Table 4). The rate of recovery
+
+response to Q3, we cannot conclude that gap formation and expan-
+
+exceeded the rate of new gap opening (formation plus expansion) by
+
+sion are compensated by increased growth of survival and succes-
+
+43%–­108%, with the exception of Tanguro where recovery was only
+
+sional trees over a short interval of 2–­4 years.
+
+70% as great as the sum of formation plus expansion. Proportionally,
+
+Our studied sites are covered by old-­growth forests, with a low
+
+the Tanguro site had the greatest gap persistence (37%). Although
+
+frequency of large disturbances (<1% for all sites, Figure 5). Canopy
+
+Jari and Ducke showed low and similar disturbance rates in terms
+
+gaps emerge from basic properties of forest communities, such as
+
+of number of gaps (i.e., gaps ha−1 year−1), Jari had considerably larger
+
+the size, number, and demography of individual trees (Jucker, 2021).
+
+2
+
+−1
+
+new gaps (13.3 m ha ; Figure 6).
+
+All sites had a high proportion of small gaps likely associated with
+
+The canopy height changes computed from our lidar data con-
+
+crown or branches fall, while medium size gaps are usually related
+
+firms that the fast recovery was associated with greater canopy
+
+to multiple branch fall or single treefall, and large gaps are related
+
+changes. Jari exhibited the highest growth rate for closed canopy,
+
+to the mortality of tree clusters often promoted by exogeneous
+
+−1
+
+−1
+
+reaching on average 0.71 m year , followed by Ducke (0.35 m year ),
+
+disturbances such as extreme rain and wind, which cause snap-
+
+Tapajos (0.15 m year−1), and Tanguro (0.06 m year−1; Table 5). The
+
+ping and/or uprooting (Bottero et al., 2011; Chambers et al., 2013;
+
+higher the changes in canopy height, the smaller is the lifetime of
+
+Leitold et al., 2018; Marra et al., 2014; Negrón-­Juárez et al., 2011;
+
+gaps.
+
+Puig, 2009).
+Our studied sites showed gaps per hectare ranging between 3.5
+
+4
+
+|
+
+DISCUSSION
+
+and 8.72 gaps ha−1, and a rate of new gaps ranging between 0.44
+and 1.4 gaps ha−1 year−1. Tanguro had the largest gap fraction among
+the sites. This was the site with the lowest recovery (25.8%), and
+
+We briefly reprise the questions that we presented in the introduc-
+
+the highest persisting (37%) and expansion rates (22.5%). Tanguro
+
+tion. Regarding Q1, using airborne lidar collected at two time periods
+
+is located in the southeast of the Amazon, close to the transition to
+
+over four different Amazonian sites, we found that the distributions
+
+the Cerrado biome, with the strongest climatic variation, the low-
+
+of gap sizes did not vary among sites. However, we did observe
+
+est precipitation, the highest number of sunny days, and the highest
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+760
+
+F I G U R E 5 Proportion of gaps in terms of frequency as a function of the gap size per study site. The bin size was defined as 2 m2.
+
+maximum temperature. Forests bordering the transition zone with
+
+of human an extreme natural-­disturbances such as windthrows
+
+the Brazilian Cerrado were previously reported as having higher gap
+
+(Silvério et al., 2019).
+
+dynamics than rainforest (Dalagnol et al., 2021). Forests in this re-
+
+The static size distributions of gaps for our four sites are similar
+
+gion may be especially vulnerable to degradation due to the synergy
+
+to those found in other remote sensing studies of tropical forests
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+| 761
+
+GORGENS et al.
+
+GORGENS et al.
+
+2
+
+Small (<100 m )
+
+Medium
+(100–­500 m2)
+
+Total
+
+2020
+
+a
+
+2017
+
+2020
+
+2017a
+
+Large (>500 m )
+
+a
+
+2017
+
+2020
+
+2017
+
+Jari
+
+137.0
+
+90.5
+
+129.2
+
+84.0
+
+215.0
+
+181.4
+
+481.2
+
+355.9
+
+Ducke
+
+137.5
+
+94.0
+
+59.1
+
+30.1
+
+3.1
+
+1.0
+
+199.7
+
+125.1
+
+Tapajos
+
+219.1
+
+215.9
+
+257.8
+
+232.0
+
+304.4
+
+186.3
+
+781.3
+
+634.2
+
+Tanguro
+
+215.0
+
+237.7
+
+99.9
+
+139.8
+
+83.6
+
+94.5
+
+398.5
+
+472.0
+
+Jari
+
+4.57
+
+3.01
+
+0.65
+
+0.41
+
+0.13
+
+0.08
+
+5.35
+
+3.50
+
+Sites
+
+a
+
+2
+
+2020
+
+(a)
+
+TA B L E 3 (a) Area of gaps per hectare of
+forest per size class in the two monitoring
+flights (m2 ha−1). (b) Number of gaps per
+hectare of forest per size class in the two
+monitoring flights (gaps ha−1).
+
+(b)
+
+a
+
+Ducke
+
+4.91
+
+3.50
+
+0.35
+
+0.18
+
+0.005
+
+0.001
+
+5.26
+
+3.68
+
+Tapajos
+
+7.02
+
+6.91
+
+1.24
+
+1.17
+
+0.26
+
+0.17
+
+8.52
+
+8.25
+
+Tanguro
+
+7.36
+
+7.87
+
+0.58
+
+0.80
+
+0.04
+
+0.05
+
+7.99
+
+8.72
+
+At Tanguro, the first flight was in 2018.
+
+Site
+
+Formation
+
+Expansion
+
+Persistence
+
+Recovery
+
+(F + E):Recovery
+
+Jari
+
+35.84
+
+41.04
+
+42.18
+
+118.88
+
+0.65
+
+Ducke
+
+15.89
+
+11.99
+
+21.63
+
+57.90
+
+0.48
+
+Tapajos
+
+32.22
+
+82.41
+
+97.84
+
+163.66
+
+0.70
+
+Tanguro
+
+46.52
+
+71.79
+
+117.81
+
+82.29
+
+1.44
+
+TA B L E 4 Area of gap stages per
+hectare per year (m2 ha−1 year−1).
+
+Note: The ratio (F + E):recovery indicates the proportion of gap formation stages (F+ E = Formation
++ Expansion) to Recovery.
+
+(Asner et al., 2013; Kellner & Asner, 2009). We found no significant
+
+because we expect higher than normal rates of disturbance associ-
+
+difference among the proportion of gaps by size classes, although
+
+ated with the strong El Nino related drought in 2015–­2016 prior to
+
+when we aggregate the bins to represent large gaps, the numbers
+
+our first survey (Leitold et al., 2018).
+
+of large gaps appear more prominent in the Tapajos and Jari sites.
+
+Where new gaps were not created, the average change in can-
+
+Fisher et al. (2008) suggested that gap frequency distributions could
+
+opy height was always positive, which indicates that even in the
+
+be used to model disturbance frequency. Reis et al. (2021) analyzed
+
+absence of detectable disturbances, old-­growth forests are contin-
+
+the gap size-­frequency distributions across 650 lidar transects cov-
+
+uously growing. The height gains were greatest for recovered gaps
+
+ering the Brazilian Amazon forest. They observed that human dis-
+
+(>2 m year−1) probably because of a contribution from lateral growth
+
+turbed forests had a higher proportion of large gaps than intact
+
+of trees at the surrounding canopy (Hunter et al., 2015; Kellner &
+
+forests. In addition, areas with strong wind gust speeds, frequent
+
+Asner, 2009). Height change in gaps has two components: lateral
+
+lightning, and more severe water shortages had a higher proportion
+
+growth from the gap edges and vertical growth from below. In a pre-
+
+of large gaps.
+
+vious study in Ducke and Tapajos, lateral growth accounted for only
+
+In order to better understand forest gap processes, we focused
+
+6%–­10% of gap closure (Hunter et al., 2015). Closed canopies and
+
+on the dynamics of gaps using measurements from two time peri-
+
+persisting gaps had similar slow rates of height increase (<1 m year−1)
+
+ods. Multitemporal gap turnover measurements using lidar are rare
+
+because those areas contained a mixture of loss and gain pixels. In
+
+in tropical forests (see Hunter et al., 2015; Leitold et al., 2018). Over
+
+general, aggrading sites where the ratio of gap recovery to the sum
+
+the short-­time interval of our study, the studied forests were clearly
+
+of formation plus expansion was greater than one (Jari, Ducke, and
+
+not in a steady-­state. At steady state, the ratio of gap recovery to
+
+Tapajos), had larger annual height gains compared to the degrading
+
+the sum of gap formation plus expansion should be equal to one. We
+
+site with lower than one value (Tanguro). Apart from different for-
+
+found that the ratio of gap recovery to the sum of formation plus
+
+est structure and species composition, the latter site is considerably
+
+expansion ranged from 1.4 to 2.1 for Tapajos, Jari, and Ducke sites.
+
+drier than the others and water limitation may restrict height growth.
+
+Only Tanguro had a ratio smaller than one (0.7). On the contrary,
+
+Comparison across studies is difficult because of different defi-
+
+prior work by Hunter et al. (2015) for Ducke and Tapajos sites using
+
+nitions for gaps and canopy disturbance. The definitions vary ac-
+
+nearly identical methods showed very similar rates of gap formation
+
+cording to both horizontal (plane area) and vertical (depth within
+
+plus expansion (26.0 and 30.5 m2 ha−1 year−1, respectively) for the
+
+the canopy) dimensions. Plane area varies from a minimum of 4 m2
+
+time period 2008 to 2012 compared to those found in this study.
+
+for an airborne lidar study (Leitold et al., 2018) to 25 m2 for studies
+
+It is reasonable for recovery to dominate at most sites in this study
+
+using photogrammetry (Araujo et al., 2021; Cushman et al., 2022).
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+|
+
+762
+
+F I G U R E 6 Diagram expressing area and number of new gaps (formation) per hectare per year by gap size class.
+TA B L E 5 Average of the net canopy
+height changes (m year−1) by gap state.
+
+Sites
+
+Closed
+canopy
+
+Persisting
+gaps
+
+Recovered
+gaps
+
+Expanding
+gaps
+
+New
+gaps
+
+Jari
+
+0.71
+
+0.47
+
+4.46
+
+−3.19
+
+−6.99
+
+Ducke
+
+0.35
+
+0.30
+
+2.07
+
+−0.89
+
+−5.43
+
+Tapajos
+
+0.15
+
+0.48
+
+3.72
+
+−3.18
+
+−6.45
+
+Tanguro
+
+0.06
+
+0.25
+
+2.31
+
+−2.36
+
+−3.71
+
+Emphasis on different dimensions depends on the purpose of the
+
+that edge effects may explain gap contagiousness. More recently,
+
+study. For example, Leitold et al. (2018) focused on carbon cycling
+
+Arellano et al. (2019) discovered another process that could lead to
+
+effects of canopy disturbance. They selected a minimum canopy
+
+gap contagiousness. They demonstrated that crown damage was a
+
+2
+
+area of 4 m and a minimum height change of 3 m in order to capture
+
+strong predictor of tree mortality. Tree-­fall or branch-­fall events can
+
+branch disturbance. Studies that focus on forest regeneration and
+
+easily damage neighboring trees making them more likely to die, sub-
+
+especially illumination conditions at the forest floor will tend to use
+
+sequently increasing contagious canopy turnover.
+
+larger horizontal dimensions and greater depth within the canopy.
+
+Gap formation and canopy turnover measured by lidar are linked
+
+All other things being equal, turnover rates will be larger with smaller
+
+to tree mortality but they are not identical. Branch fall or more se-
+
+area and shallow depth constraints.
+
+vere canopy damage is recorded by lidar but is not accounted for as
+
+This study agrees with prior work showing that tropical forest
+
+mortality in forest inventory surveys. Often, these events are also
+
+gaps are contagious (Hunter et al., 2015; Young & Hubbell, 1991).
+
+not quantified in biomass inventories (Peixoto, 2021). In contrast,
+
+The annualized area of gap expansion was larger than new gap
+
+tree mortality will not necessarily be registered in lidar surveys of
+
+formation at three of four sites investigated in this study. Only at
+
+forest turnover. Trees that die standing may not immediately cre-
+
+Ducke, where the canopy was least dynamic, new gap formation
+
+ate a gap in lidar surveys and may never lead to gap opening if re-
+
+exceeded the gap expansion area. Hunter et al. (2015) suggested
+
+growth around the dead tree and decomposition of the snag follow
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+| 763
+
+GORGENS et al.
+
+|
+
+GORGENS et al.
+
+similar rates. Nevertheless, recent studies found that field-­based
+
+the forest dynamics. Both gap formation and recovery must be con-
+
+mortality was related to lidar measures of canopy turnover across
+
+sidered. Future studies using airborne lidar and photogrammetry at
+
+the Brazilian Amazon (Dalagnol et al., 2021) and in French Guiana
+
+more sites over longer periods have the potential to greatly improve
+
+(Huertas et al., 2022). We believe that relations between the two
+
+our understanding of forest canopy dynamics.
+
+quantities (formation and turnover) may be improved by considering
+regional variations in the modes of tree death (Esquivel-­Muelbert
+
+AU T H O R C O N T R I B U T I O N S
+
+et al., 2020).
+
+EBG, MK, CRR, and DRAA: Study concept and design. EBG, JPO, and
+
+Based on prior studies, we know that the rate of canopy turn-
+
+MK: Data acquisition and processing. EBG, DRAA, TDJ, and CRR:
+
+over and gap formation varies greatly from year to year. Observing
+
+Analysis. EBG, MK, TDJ, DMM, CRR, DRAA, DAC, and JPO: Writing
+
+the fall of coarse woody debris in the Tapajos forest, Palace
+
+and reviewing.
+
+et al. (2007) found that necromass production at one of his two
+100-­ha study sites was dominated by a single storm event. This
+
+AC K N OW L E D G M E N T S
+
+result is similar to the findings of Araujo et al. (2021) in the 50-­
+
+Funding was provided by the Coordenação de Aperfeiçoamento
+
+ha plot at Barro Colorado Island, Panama. They found that 20%
+
+de Pessoal de Nível Superior Brasil (CAPES; Finance Code 001);
+
+of all canopy damage registered over 5 years occurred in a single
+
+Conselho Nacional de Desenvolvimento Científico e Tecnológico
+
+42-­day period. Canopy damage and tree mortality are associated
+
+(Processes 403297/2016-­8 and 301661/2019-­7); Universidade
+
+with episodic events such as lightning, convective storms, and se-
+
+Federal dos Vales do Jequitinhonha e Mucuri (UFVJM). D.
+
+vere winds (Espírito-­S anto et al., 2010; Negrón-­J uárez et al., 2018;
+
+Almeida was supported by the São Paulo Research Foundation
+
+Silvério et al., 2019; Yanoviak et al., 2020). Extreme events may
+
+(#2018/21338-­3 and #2019/14697-­0). T. Jackson and D. Coomes
+
+dominate forest disturbance. For example, Araujo et al. (2017)
+
+were supported by the UK Natural Environment Research Council
+
+found that about 40% of all new windthrow areas (>4 ha patch
+
+grant NE/S010750/1. Data were acquired by the Sustainable
+
+size) that occurred in 2005 were associated with a single squall line
+
+Landscapes Brazil project supported by the Brazilian Agricultural
+
+event and were concentrated in just 12% of the Brazilian Amazon
+
+Research Corporation (EMBRAPA), the US Forest Service, and
+
+area. Because of the temporal and spatial clustering of distur-
+
+USAID, and the US Department of State; and by Instituto Nacional
+
+bance, long-­t imes and large areas are important for achieving con-
+
+de Pesquisas Espaciais (INPE) supported by Amazon Fund (grant
+
+sistent and reliable quantification of wind damage.
+
+14.2.0929.1), National Academy of Sciences and US Agency for
+
+The spatially and temporally clustered nature of natural distur-
+
+International Development (grant AID-­OAA-­A-­11-­0 0012).
+
+bance poses a challenge to consistently and reliably comprehend the
+gap dynamics in tropical forest. Different strategies like large plots
+
+C O N F L I C T O F I N T E R E S T S TAT E M E N T
+
+(>10 ha) over shorter time periods or small plots (1 ha) over very long
+
+The corresponding author confirms on behalf of all authors that
+
+monitoring time have been discussed to capture episodic distur-
+
+there have been no involvements that might raise the question of
+
+bances. The use of airborne laser scanning to cover large areas with
+
+bias in the work reported or in the conclusions, implications, or opin-
+
+high density of returns and multitemporal flights, together with a
+
+ions stated.
+
+methodology capable to discriminate states and stages open a great
+opportunity to study canopy dynamics. Our sequence of two sur-
+
+DATA AVA I L A B I L I T Y S TAT E M E N T
+
+veys over large areas allowed us to expand the investigation about
+
+The data that support the findings of this study are openly available
+
+gap fraction, quantifying the gap dynamics composed by four stages:
+
+at https://zenodo.org/recor​d/7689693, https://zenodo.org/recor​
+
+formation, expansion, persistence, and recovery. We found that all
+
+d/7636454,
+
+of our sites were far from steady state over the 2-­to 4-­year interval
+
+webgi​s/.
+
+and
+
+https://www.paisa​gensl​idar.cnptia.embra​pa.br/
+
+of the study. Out of four sites, forest recovery area exceeded the
+area of new gap formation in three sites. Where gaps formed, there
+
+ORCID
+https://orcid.org/0000-0003-2517-0279
+
+was a tendency for them to be located adjacent to existing gaps (gap
+
+Eric Bastos Gorgens
+
+expansion was more common than new gap creation) suggesting
+
+Michael Keller
+
+https://orcid.org/0000-0002-0253-3359
+
+that gap opening is a contagious process.
+
+Toby Jackson
+
+https://orcid.org/0000-0001-8143-6161
+
+Gaps are the manifestation of how disturbances disrupt forest
+landscapes, opening the canopy to sunlight and trigging succession,
+
+https://orcid.
+
+Daniel Magnabosco Marra
+org/0000-0003-1216-2982
+
+https://orcid.
+
+which increase heterogeneity, diversity and complexity to forest
+
+Cristiano Rodrigues Reis
+
+canopies. The concept of stability reflects the tendency of a system
+
+org/0000-0002-5584-613X
+
+to quickly return to a position of equilibrium when disturbed. We
+
+Danilo Roberti Alves de Almeida
+
+show that gap dynamics varied among sites, with one example of a
+
+org/0000-0002-8747-0085
+
+https://orcid.
+
+https://orcid.org/0000-0002-8261-2582
+
+low recovery rate contrasted to sites with faster recovery. Looking
+
+David Coomes
+
+only at the distribution of gaps produce an incomplete picture of
+
+Jean Pierre Ometto
+
+https://orcid.org/0000-0002-4221-1039
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+764
+
+REFERENCES
+Araujo, R. F., Grubinger, S., Celes, C. H. S., Negrón-­Juárez, R. I., Garcia,
+M., Dandois, J. P., & Muller-­L andau, H. C. (2021). Strong temporal
+variation in treefall and branchfall rates in a tropical forest is explained by rainfall: Results from five years of monthly drone data
+for a 50-­ha plot. Biogeosciences Discussions, 2021, 1–­19.
+Araujo, R. F., Nelson, B. W., Celes, C. H. S., & Chambers, J. Q. (2017).
+Regional distribution of large blowdown patches across Amazonia
+in 2005 caused by a single convective squall line. Geophysical
+Research Letters, 44, 7793–­7798.
+Arellano, G., Medina, N. G., Tan, S., Mohamad, M., & Davies, S. J. (2019).
+Crown damage and the mortality of tropical trees. The New
+Phytologist, 221, 169–­179.
+Arellano, G., Zuleta, D., & Davies, S. J. (2021). Tree death and damage:
+A standardized protocol for frequent surveys in tropical forests.
+Journal of Vegetation Science, 32, e12981. https://onlin​elibr​ary.
+wiley.com/doi/10.1111/jvs.12981
+Asner, G. P., Kellner, J. R., Kennedy-­Bowdoin, T., Knapp, D. E., Anderson,
+C., & Martin, R. E. (2013). Forest canopy gap distributions in the
+southern Peruvian Amazon. PLoS One, 8, e60875.
+Bottero, A., Garbarino, M., Dukic, V., Govedar, Z., Lingua, E., Nagel, T. A.,
+& Motta, R. (2011). Gap-­phase dynamics in the old-­growth forest of
+Lom, Bosnia and Herzegovina. Silva Fennica, 45, 875–­887.
+Chambers, J. Q., Negron-­Juarez, R. I., Marra, D. M., Di Vittorio, A., Tews,
+J., Roberts, D., Ribeiro, G. H. P. M., Trumbore, S. E., & Higuchi, N.
+(2013). The steady-­state mosaic of disturbance and succession
+across an old-­growth Central Amazon forest landscape. Proceedings
+of the National Academy of Sciences of the United States of America,
+110, 3949–­3954.
+Cordeiro, J. F. (2021). Validação dos dados LiDAR do projeto Paisagens
+Sustentáveis Brasil –­Coleta de 2020. 77.
+Cushman, K. C., Detto, M., García, M., & Muller-­L andau, H. C. (2022).
+Soils and topography control natural disturbance rates and thereby
+forest structure in a lowland tropical landscape. Ecology Letters, 25,
+1126–­1138.
+Dalagnol, R., Phillips, O. L., Gloor, E., Galvão, L. S., Wagner, F. H., Locks,
+C. J., & Aragão, L. E. O. C. (2019). Quantifying canopy tree loss
+and gap recovery in tropical forests under low-­intensity logging
+using VHR satellite imagery and airborne LiDAR. Remote Sensing,
+11, 817.
+Dalagnol, R., Wagner, F. H., Galvão, L. S., Streher, A. S., Phillips, O. L.,
+Gloor, E., Pugh, T. A. M., Ometto, J. P. H. B., & Aragão, L. E. O. C.
+(2021). Large-­scale variations in the dynamics of Amazon forest
+canopy gaps from airborne lidar data and opportunities for tree
+mortality estimates. Scientific Reports UK, 11, 1388.
+Denslow, J. S., Ellison, A. M., & Sanford, R. E. (1998). Treefall gap size
+effects on above-­ and below-­ground processes in a tropical wet
+forest. Journal of Ecology, 86, 597–­609.
+Espírito-­Santo, F. D. B., Gloor, M., Keller, M., Malhi, Y., Saatchi, S., Nelson,
+B., Junior, R. C., Pereira, C., Lloyd, J., Frolking, S., Palace, M.,
+Shimabukuro, Y. E., Duarte, V., Mendoza, A. M., López-­González, G.,
+Baker, T. R., Feldpausch, T. R., Brienen, R. J., Asner, G. P., … Phillips,
+O. L. (2014). Size and frequency of natural forest disturbances
+and the Amazon forest carbon balance. Nature Communications, 5,
+3434.
+Espírito-­Santo, F. D. B., Keller, M., Braswell, B., Nelson, B. W., Frolking,
+S., & Vicente, G. (2010). Storm intensity and old-­growth forest disturbances in the Amazon region. Geophysical Research Letters, 37,
+L11403.
+Esquivel-­Muelbert, A., Phillips, O. L., Brienen, R. J. W., Fauset, S.,
+Sullivan, M. J. P., Baker, T. R., Chao, K. J., Feldpausch, T. R., Gloor,
+E., Higuchi, N., Houwing-­Duistermaat, J., Lloyd, J., Liu, H., Malhi,
+Y., Marimon, B., Marimon Junior, B. H., Monteagudo-­Mendoza,
+A., Poorter, L., Silveira, M., … Galbraith, D. (2020). Tree mode of
+
+| 765
+death and mortality risk factors across Amazon forests. Nature
+Communications, 11, 5515.
+Fisher, J. I., Hurtt, G. C., Thomas, R. Q., & Chambers, J. Q. (2008).
+Clustered disturbances lead to bias in large-­scale estimates based
+on forest sample plots. Ecology Letters, 11, 554–­563.
+Gora, E. M., Burchfield, J. C., Muller-­L andau, H. C., Bitzer, P. M., &
+Yanoviak, S. P. (2020). Pantropical geography of lightning-­c aused
+disturbance and its implications for tropical forests. Global Change
+Biology, 26, 5017–­5026.
+Gorgens, E. B., Motta, A. Z., Assis, M., Nunes, M. H., Jackson, T., Coomes,
+D., Rosette, J., Aragão, L. E. O. . C., & Ometto, J. P. (2019). The giant
+trees of the Amazon basin. Frontiers in Ecology and the Environment,
+17, 373–­374.
+Gorgens, E. B., Nunes, M. H., Jackson, T., Coomes, D., Keller, M., Reis,
+C. R., Valbuena, R., Rosette, J., Almeida, D. R. A., Gimenez, B.,
+Cantinho, R., Motta, A. Z., Assis, M., Souza Pereira, F. R., Spanner,
+G., Higuchi, N., & Ometto, J. P. (2021). Resource availability and
+disturbance shape maximum tree height across the Amazon. Global
+Change Biology, 27, 177–­189.
+Hartshorn, G. S. (1978). Tree falls and tropical forest dynamics. In Tropical
+trees as living systems (Vol. 1). Cambridge University Press.
+Huertas, C., Sabatier, D., Derroire, G., Ferry, B., Jackson, T. D., Pélissier,
+R., & Vincent, G. (2022). Mapping tree mortality rate in a tropical
+moist forest using multi-­temporal LiDAR. International Journal of
+Applied Earth Observation and Geoinformation, 109, 102780.
+Hunter, M. O., Keller, M., Morton, D., Cook, B., Lefsky, M., Ducey, M.,
+Saleska, S., de Oliveira, R. C., & Schietti, J. (2015). Structural dynamics of tropical moist forest gaps. PLoS One, 10, e0132144.
+Jucker, T. (2021). Deciphering the fingerprint of disturbance on the three-­
+dimensional structure of the world's forests. The New Phytologist,
+233, 612–­617. https://doi.org/10.1111/nph.17729
+Kellner, J. R., & Asner, G. P. (2009). Convergent structural responses of
+tropical forests to diverse disturbance regimes. Ecology Letters, 12,
+887–­897.
+Lefsky, M. A., Cohen, W. B., Parker, G. G., & Harding, D. J. (2002). Lidar
+remote sensing for ecosystem studies. Bioscience, 52, 19–­3 0.
+Leitold, V., Keller, M., Morton, D. C., Cook, B. D., & Shimabukuro, Y. E.
+(2015). Airborne lidar-­based estimates of tropical forest structure in complex terrain: Opportunities and trade-­offs for REDD+.
+Carbon Balance and Management, 10, 3.
+Leitold, V., Morton, D. C., Longo, M., dos-­Santos, M. N., Keller, M., &
+Scaranello, M. (2018). El Niño drought increased canopy turnover
+in Amazon forests. The New Phytologist, 219, 959–­971.
+Marra, D. M., Chambers, J. Q., Higuchi, N., Trumbore, S. E., Ribeiro, G. H.
+P. M., dos Santos, J., Negrón-­Juárez, R. I., Reu, B., & Wirth, C. (2014).
+Large-­scale wind disturbances promote tree diversity in a Central
+Amazon Forest. PLoS One, 9, e103711.
+Marra, D. M., Trumbore, S. E., Higuchi, N., Ribeiro, G. H. P. M., Negrón-­
+Juárez, R. I., Holzwarth, F., Rifai, S. W., dos Santos, J., Lima, A. J.
+N., Kinupp, V. F., Chambers, J. Q., & Wirth, C. (2018). Windthrows
+control biomass patterns and functional composition of Amazon
+forests. Global Change Biology, 24, 5867–­5881.
+Muscolo, A., Bagnato, S., Sidari, M., & Mercurio, R. (2014). A review of
+the roles of forest canopy gaps. Journal of Forestry Research, 25,
+725–­736.
+Negrón-­Juárez, R. I., Chambers, J. Q., Marra, D. M., Ribeiro, G. H. P. M.,
+Rifai, S. W., Higuchi, N., & Roberts, D. (2011). Detection of subpixel treefall gaps with Landsat imagery in Central Amazon forests.
+Remote Sensing of Environment, 115, 3322–­3328.
+Negrón-­Juárez, R. I., Holm, J. A., Marra, D. M., Rifai, S. W., Riley, W. J.,
+Chambers, J. Q., Koven, C. D., Knox, R. G., McGroddy, M. E., di
+Vittorio, A. V., Urquiza-­Muñoz, J., Tello-­Espinoza, R., Muñoz, W. A.,
+Ribeiro, G. H. P. M., & Higuchi, N. (2018). Vulnerability of Amazon
+forests to storm-­driven tree mortality. Environmental Research
+Letters, 13, 054021.
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GORGENS et al.
+
+|
+
+Palace, M., Keller, M., Asner, G. P., Silva, J. N. M., & Passos, C. (2007).
+Necromass in undisturbed and logged forests in the Brazilian
+Amazon. Forest Ecology and Management, 238, 309–­318.
+Peixoto, A. S. L. (2021). Distribuição e geometria de clareiras em floresta
+da Amazônia central combinando imagens de aeronave remotamente pilotada (ARP) e dados de campo.
+Puig, H. (2009). Floresta Tropical Úmida. UNESP.
+QGIS Team. (2021). QGIS geographic information system. http://qgis.org
+R Team. (2021). R: A language and environment for statistical computing.
+https://www.r-­proje​c t.org/
+Reis, C. R., Jackson, T. D., Gorgens, E. B., Dalagnol, R., Jucker, T., Nunes, M.
+H., Ometto, J. P., Aragão, L. E. O. C., Rodriguez, L. C. E., & Coomes,
+D. A. (2021). Forest structure and degradation drive canopy gap
+sizes across the Brazilian Amazon. Biorxiv 2021.05.03.442416.
+https://doi.org/10.1101/2021.05.03.442416
+Roussel, J.-­R ., & Auty, D. (2021). Airborne LiDAR Data Manipulation and
+Visualization for Forestry Applications. https://cran.r-­proje​c t.org/
+web/packa​ges/lidR/index.html
+Schaetzl, R. J., Burns, S. F., Johnson, D. L., & Small, T. W. (1988). Tree
+uprooting: Review of impacts on forest ecology. Vegetatio, 79,
+165–­176.
+Silva, C., Hudak, A., Vierling, L., Klauberg, C., Garcia, M., Ferraz, A., Keller,
+M., Eitel, J., & Saatchi, S. (2017). Impacts of airborne Lidar pulse
+density on estimating biomass stocks and changes in a selectively
+logged tropical Forest. Remote Sensing, 9, 1068.
+Silvério, D. V., Brando, P. M., Bustamante, M. M. C., Putz, F. E., Marra,
+D. M., Levick, S. R., & Trumbore, S. E. (2019). Fire, fragmentation,
+and windstorms: A recipe for tropical forest degradation. Journal of
+Ecology, 107, 656–­667.
+Toledo, J. J., Magnusson, W. E., & Castilho, C. V. (2013). Competition,
+exogenous disturbances and senescence shape tree size distribution in tropical forest: Evidence from tree mode of death in Central
+Amazonia. Journal of Vegetation Science, 24, 651–­663.
+
+GORGENS et al.
+
+White, P. S., & Pickett, S. T. A. (1985). Natural disturbance and patch
+dynamics: An introduction. In S. T. A. Pickett & P. S. White (Eds.),
+The ecology of natural disturbance and patch dynamics (pp. 3–­13).
+Academic Press. https://doi.org/10.1016/b978-­0 -­0 8-­05049​5-­
+7.50006​-­5
+Whitmore, T. C. (1989). Canopy gaps and the two major groups of forest
+trees. Ecology, 70, 536–­538.
+Yanoviak, S. P., Gora, E. M., Bitzer, P. M., Burchfield, J. C., Muller-­L andau,
+H. C., Detto, M., Paton, S., & Hubbell, S. P. (2020). Lightning is a
+major cause of large tree mortality in a lowland neotropical forest.
+The New Phytologist, 225, 1936–­1944.
+Young, T. P., & Hubbell, S. P. (1991). Crown asymmetry, treefalls, and
+repeat disturbance of broad-­leaved forest gaps. Ecology, 72,
+1464–­1471.
+Zhang, K. (2008). Identification of gaps in mangrove forests with airborne LIDAR. Remote Sensing of Environment, 112, 2309–­2325.
+Zhang, W., Qi, J., Wan, P., Wang, H., Xie, D., Wang, X., & Yan, G. (2016).
+An easy-­to-­use airborne LiDAR data filtering method based on
+cloth simulation. Remote Sensing, 8, 501.
+
+How to cite this article: Gorgens, E. B., Keller, M., Jackson, T.,
+Marra, D. M., Reis, C. R., de Almeida, D. R. A., Coomes, D., &
+Ometto, J. P. (2023). Out of steady state: Tracking canopy
+gap dynamics across Brazilian Amazon. Biotropica, 55,
+755–766. https://doi.org/10.1111/btp.13226
+
+17447429, 2023, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/btp.13226 by Cornell University, Wiley Online Library on [22/10/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+766
+
+
