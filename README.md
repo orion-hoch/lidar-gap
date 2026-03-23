@@ -22,7 +22,6 @@ lidar-gap-analysis/
 ├── data/
 │   └── input.md           # Processing parameters and file paths
 ├── outputs/               # Generated files (gitignored)
-├── CLAUDE.md
 ├── requirements.txt
 └── .gitignore
 ```
